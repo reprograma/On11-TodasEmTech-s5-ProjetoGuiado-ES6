@@ -12,6 +12,7 @@ Turma Online 11 - Todas em Tech | Back-end | 2021 | Projeto Guiado: Desafio ES6
 * [5. Critérios de aceitação mínimos do projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Considerações técnicas](#7-considerações-técnicas)
+* [8. Links úteis](#8-considerações-técnicas)
 
 ***
 
@@ -81,4 +82,10 @@ Também não foi mencionado o que aconteceria com _offset_ negativo. Como parte 
 
 A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse projeto **NÃO** está permitido usar bibliotecas ou frameworks.
 
+## 8. Links úteis
 
+[Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)   
+
+[JS da School of Net - Plataforma brasileira](https://www.schoolofnet.com/curso/frontend/javascript/iniciando-com-javascript-rev3/)   
+
+[Site interativo e gamificado - Está em inglês mas a tradução do navegador funciona ;)](https://learnjavascript.online/)
