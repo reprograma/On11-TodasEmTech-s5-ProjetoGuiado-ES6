@@ -84,6 +84,8 @@ A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse p
 
 ## 8. Links úteis
 
-[Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-[JS da School of Net - Plataforma brasileira](https://www.schoolofnet.com/curso/frontend/javascript/iniciando-com-javascript-rev3/)
+[Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)   
+
+[JS da School of Net - Plataforma brasileira](https://www.schoolofnet.com/curso/frontend/javascript/iniciando-com-javascript-rev3/)   
+
 [Site interativo e gamificado - Está em inglês mas a tradução do navegador funciona ;)](https://learnjavascript.online/)
