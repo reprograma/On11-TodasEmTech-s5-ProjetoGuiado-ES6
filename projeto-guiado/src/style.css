@@ -37,6 +37,12 @@ h1 {
   margin: auto;
   align-content: center;
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px;
+    flex-direction: column;
+  }
+}
 
 .left {
   width: 50%;
@@ -57,6 +63,7 @@ h1 {
 .console-output {
   display: flex;
   background-color: #000;
+  margin-bottom: 32px;
 }
 
 .console-output #output {
