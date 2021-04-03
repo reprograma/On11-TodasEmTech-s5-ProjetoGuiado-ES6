@@ -1,20 +1,21 @@
 # On11-TodasEmTech-s5-ProjetoGuiado-DesafioES6
+
 Turma Online 11 - Todas em Tech | Back-end | 2021 | Projeto Guiado: Desafio ES6
 
 ## Cifra de César
 
 ### Índice
 
-* [1. Introdução](#1-introdução)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Links úteis](#8-considerações-técnicas)
+- [1. Introdução](#1-introdução)
+- [2. Resumo do projeto](#2-resumo-do-projeto)
+- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+- [4. Considerações gerais](#4-considerações-gerais)
+- [5. Critérios de aceitação mínimos do projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
+- [6. Hacker edition](#6-hacker-edition)
+- [7. Considerações técnicas](#7-considerações-técnicas)
+- [8. Links úteis](#8-considerações-técnicas)
 
-***
+---
 
 ## 1. Introdução
 
@@ -26,10 +27,10 @@ A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É u
 
 Por exemplo se usarmos o deslocamento (_offset_) de 3 posições:
 
-* Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto com cifra:  D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-* A letra A será D
-* A palavra CASA será FDVD
+- Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+- Alfabeto com cifra: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+- A letra A será D
+- A palavra CASA será FDVD
 
 Atualmente todas as cifras de substituição alfabética simples, são decifradas com facilidade e não oferecem muita segurança na comunição, mas a cifra de César muitas vezes pode fazer parte de um sistema mais complexo de criptografia, como a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
@@ -43,21 +44,21 @@ Neste projeto você aprenderá a construir uma aplicação web (_WebApp_) que ir
 
 ### JavaScript
 
-* [ ] Manipulação de strings
-* [ ] Declaração correta de variáveis (const & let)
-* [ ] Uso de condicionais (if-else | switch)
-* [ ] Uso de laços (for | for..in | for..of | while)
-* [ ] Uso de funções (parâmetros | argumentos | valor de retorno)
+- Manipulação de strings
+- Declaração correta de variáveis (const & let)
+- Uso de condicionais (if-else | switch)
+- Uso de laços (for | for..in | for..of | while)
+- Uso de funções (parâmetros | argumentos | valor de retorno)
 
 ## 4. Considerações gerais
 
-* Este projeto deve ser resolvido individualmente.
+- Este projeto deve ser resolvido individualmente.
 
 ## 5. Critérios de aceitação mínimos do projeto
 
 Use o alfabeto simples (somente maiúsculas e sem ç):
 
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 <!-- ### Interface do usuário (UI)
 
@@ -84,8 +85,8 @@ A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse p
 
 ## 8. Links úteis
 
-[Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)   
+[Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
-[JS da School of Net - Plataforma brasileira](https://www.schoolofnet.com/curso/frontend/javascript/iniciando-com-javascript-rev3/)   
+[JS da School of Net - Plataforma brasileira](https://www.schoolofnet.com/curso/frontend/javascript/iniciando-com-javascript-rev3/)
 
 [Site interativo e gamificado - Está em inglês mas a tradução do navegador funciona ;)](https://learnjavascript.online/)
