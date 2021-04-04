@@ -35,11 +35,12 @@ function cifrar() {
     let cifrado = "";
     let deslocamento = Number(chaveDeslocamento.value);
 
+    
+    //verifica se chaveDeslocamento existe e se alguma palavra foi digitada
+     // ver artigo https://blog.rocketseat.com.br/entendendo-falsy-e-truthy-no-javascript/
     if (deslocamento && palavras.length > 0) {
         for (itemPalavras of palavras) {
 
-            //verifica se chaveDeslocamento existe
-            // ver artigo https://blog.rocketseat.com.br/entendendo-falsy-e-truthy-no-javascript/
             for (letra of itemPalavras) {
                 // precisamos pegar o index da letra no array do alfabeto
                 const indexInicial = letrasMaiusculas.indexOf(letra);
