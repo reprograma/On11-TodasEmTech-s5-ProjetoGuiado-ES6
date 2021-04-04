@@ -46,18 +46,22 @@ O [URI Online Judge](https://www.urionlinejudge.com.br/judge/pt/login) é uma pl
 
 ### Arrays e loops
 
-- Exercício 06 - * Crie um array com todos os anos que Rihanna lançou álbum   
--
+#### Exercício 06 
+
+* Crie um array com todos os anos que Rihanna lançou álbum   
+
    2005 2006 2007 2009 2010 2011 2012 2016
 
 * Interaja com o array utilizando um loop, para mostrar no console a seguinte mensagem: "Rihanna lançou álbum no ano de XXXX"
 
-- Exercício 07 - Interaja com o array de linguagens e pare ao chegar em Node
+#### Exercício 07
+
+* Interaja com o array de linguagens e pare ao chegar em Node
 
 ```
 const linguagens = ['JavaScript', 'Go', 'Java', 'Angular', 'Node', 'React', 'Ruby']
 ```
-Depois coloque a última linguagem do array em uma variável sem removê-la do array.   
+* Depois coloque a última linguagem do array em uma variável sem removê-la do array.   
 
 
 ## Links para consulta
