@@ -36,7 +36,7 @@ function cifrar() {
     let deslocamento = Number(chaveDeslocamento.value);
 
     
-    //verifica se chaveDeslocamento existe e se alguma palavra foi digitada
+    //verifica se a chave de deslocamento existe e se alguma palavra foi digitada
      // ver artigo https://blog.rocketseat.com.br/entendendo-falsy-e-truthy-no-javascript/
     if (deslocamento && palavras.length > 0) {
         for (itemPalavras of palavras) {
