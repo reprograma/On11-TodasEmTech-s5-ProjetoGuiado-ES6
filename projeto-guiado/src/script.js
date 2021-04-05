@@ -1,6 +1,6 @@
-const entrada = prompt("Digite um texto a ser cifrado");
+const entrada = prompt("Digite um texto para cifrar ou decifrar: ");
 
-const chaveDeslocamento = Number(prompt("Digite um número para a chave de deslocamento"));
+const chaveDeslocamento = Number(prompt("Digite um número para a chave de deslocamento: "));
 
 // outra opção de gerar o array >> const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const letrasMaiusculas = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
