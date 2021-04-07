@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <div style="text-align:center">
+        <h1>Lanches da Emi's</h1><br>
+        <p>1  Cachorro Quente R$ 4.00 <br>
+        2 X-Salada R$ 4.50 <br>
+        3 X-Bacon R$ 5.00 <br>
+        4 Torrada Simples R$ 2.00 <br>
+        5 Refrigerante R$ 1.50 </p>
+
+        <div class="console">
+            <label for="input">Código do lanche:</label>
+            <div class="console-input">
+                <label class="arrow" for="input">></label>
+                <input type="text" id="input">
+            </div>    
+        </div>
+        <div class="console">
+            <label for="shift-input">Quantos lanches:</label>
+            <div class="console-input">
+                <label class="arrow" for="shift-input">></label>
+                <input type="text" id="shift-input" value>
+        </div>
+     </div>
+        <label for="output">Conta:</label>
+        <div class="console-output">
+            <label class="arrow" for="output">></label>
+            <textarea id="output" value=""></textarea>
+        </div>
+        <button id="calcula" onclick="lanche()">Fechar pedido</button>
+     </div>
+    </div>
+    <script>
+        let codigo = document.getElementById("input");
+        let qLanche = document.getElementById("shift-input");
+        let saida = document.getElementById("output");
+        function lanche(){
+            let getCodigo = codigo.value;
+            let getQuantidade = qLanche.value;
+            let totalPagar;
+
+            if(getCodigo == 1){
+            totalPagar = getQuantidade * 4;
+            } else if (getCodigo == 2){
+                totalPagar = getQuantidade * 4.5;
+            } else if(getCodigo == 3){
+                totalPagar = getQuantidade * 5;
+            }else if(getCodigo == 4){
+                totalPagar = getQuantidade * 2;
+            }else if(getCodigo == 5){
+                totalPagar = getQuantidade * 1.5;
+            } else{
+                totalPagar = "ERROR!";
+            }
+            return saida.value = 'Total R$ ' + totalPagar;
+        }
+
+
+    </script>
+</body>
+
+</html>

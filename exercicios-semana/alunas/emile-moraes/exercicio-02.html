@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+        let totPar = totImpar =  totPositivo = totNegativo = 0;
+        for(var i = 0; i < 5; i ++){
+            let valores = prompt("Número: ");
+            if(valores < 0){
+                totNegativo++;
+            } else if (valores > 0){
+                totPositivo++;
+            }
+            
+            if(valores % 2 == 0){
+                totPar++;
+            } else {
+            totImpar++;
+            }
+        }
+        console.log(totPar, " valor(es) par(es)");
+        console.log(totImpar, " valor(es) ímpar(es)");
+        console.log(totPositivo, " valor(es) positivo(s)");
+        console.log(totNegativo, " valor(es) negativo(s)");
+    </script>
+</body>
+
+</html>
