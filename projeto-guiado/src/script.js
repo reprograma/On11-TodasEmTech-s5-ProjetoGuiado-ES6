@@ -14,15 +14,13 @@ function limpar() {
 const letrasMaiusculas = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 function cifrar() {
-  const palavras = entrada.value.split(" ")
-  console.log('palavras', palavras)
-
+  const palavras = entrada.value.toUpperCase().split(" ")
   let cifrado = ""
+
   for(itemPalavras of palavras){
 
     for(letra of itemPalavras){
       const indexInicial = letrasMaiusculas.indexOf(letra)
-
       let indexFinal
 
       if(indexInicial == -1){
@@ -31,13 +29,49 @@ function cifrar() {
         return
       
       }else{
-        console.log('index inicial', indexInicial)
         indexFinal =  (indexInicial + Number(chaveDeslocamento.value)) % 26
         cifrado += letrasMaiusculas[indexFinal]
       }
     }
     cifrado += " "
+  } 
+  return saida.value = cifrado
+}
+
+function decifrar(){
+  const palavrasDecifrar = entrada.value.toUpperCase().split(" ")
+  let decifrado = ""
+  
+  for(palavra of palavrasDecifrar){
+    console.log('palavra: ', palavra)
+
+    for(letra of palavra){
+      const indexInicial = letrasMaiusculas.indexOf(letra)
+      let indexFinal
+
+      console.log('index Inicial: ', indexInicial)
+      console.log('letra: ', letra)
+      
+      if (indexInicial !== -1 && indexInicial >= Number(chaveDeslocamento.value)) {
+        indexFinal =  (indexInicial - Number(chaveDeslocamento.value))
+        console.log('Index Final: ', indexFinal)
+        decifrado += letrasMaiusculas[indexFinal]
+
+      }else if (indexInicial !== -1){
+        indexFinal =  letrasMaiusculas.length - (Number(chaveDeslocamento.value) - indexInicial)
+        decifrado += letrasMaiusculas[indexFinal]
+
+        console.log('index final é: ', indexFinal);
+       
+      } else {
+        console.log('ERRO: Letra não encontrada')
+        limpar()
+        return
+      }
+    }
+
+    decifrado += ' '
   }
-  console.log("cifrar", cifrado);
-  return saida.value = cifrado;
+
+  return saida.value = decifrado
 }
