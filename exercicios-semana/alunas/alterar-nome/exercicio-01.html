@@ -10,11 +10,42 @@
 
 <body>
     <script>
+function Tabela(){
+    console.log("codigo: 1 | Lanche: Cachorro Quente | Valor: 4.00")
+    console.log("<br>");
+    console.log("codigo: 2 | Lanche: X-Salada        | Valor: 4.50 ");
+    console.log("<br>");
+    console.log("codigo: 3 | Lanche: X-Bacon         | Valor: 4.00 ");
+    console.log("<br>");
+    console.log("codigo: 4 | Lanche: Torrada Simples | Valor: 2.00 ");
+    console.log("<br>");
+    console.log("codigo: 5 | Lanche: Refrigerante    | Valor: 1.50 ");
+}
 
+function Lanche(){
+  var codigo = Number(prompt('Digite a opção do lanche que deseja: '));
+  var qntd = Number(prompt("Quantos você deseja: "));
 
-
+  if (codigo == 1){
+        console.log(`Cachorro - Quente | Total R$: ${(4*qntd).toFixed(2)}`);
+     } else if (codigo == 2){
+        console.log(`X-Salada | Total R$: ${(4.5*qntd).toFixed(2)}`);
+     } else if (codigo == 3){
+        console.log(`X-Bacon | Total R$: ${(4*qntd).toFixed(2)}`);
+     } else if (codigo == 4){
+        console.log(`Torrada Simples | Total R$: ${(2*qntd).toFixed(2)}`);
+     } else if (codigo == 5){
+        console.log(`Refrigerante | Total R$: ${(1.5*qntd).toFixed(2)}`);
+     } else {
+        console.log('Opção não localizada')
+         return Lanche();
+     }    
+    }
+    Tabela();
+    Lanche();
 
     </script>
+
 </body>
 
 </html>
