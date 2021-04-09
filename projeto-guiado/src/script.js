@@ -1,31 +1,41 @@
-// const entrada = prompt("Digite um texto para cifrar ou decifrar: ");
-
-// const chaveDeslocamento = Number(prompt("Digite um número para a chave de deslocamento: "));
-
-// // outra opção de gerar o array >> const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-// const letrasMaiusculas = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-
-
-
 const numero = Number(prompt("Digite um numero"));
-const numero2 = Number(prompt("Digite outro numero"));
+const numeroDois = Number(prompt("Digite outro numero"));
 
 const opcao = prompt("Digite um 1 para somar um número com outro e digite 2 para multiplicar os números");
 
+//reparem que no exercício do URI os números recebidos *não* são somados nem multiplicados, você precisa saber o código para identificar o valor de cada item
 
 switch (opcao) {
     case "1":
-        const soma = numero + numero2;
-        document.write(soma);
+        const soma = numero + numeroDois;
+        console.log(soma);
         break;
     case "2":
-        const multiplicar = numero * numero2;
+        const multiplicar = numero * numeroDois;
         console.log(multiplicar, "multiplicar");
         break;
     default:
-        document.write("Ops, escolheu uma opção inexistente");
+        console.log("Ops, escolheu uma opção inexistente");
         break;
 }
+
+// Exemplo while
+
+let salario = 1000;
+
+while (salario < 5000) {
+    console.log("estamos testando while - nessa volta o valor do salario é: ", salario);
+    // salario = salario + 1000 mesma coisa que a linha abaixo
+    salario += 1000;
+}
+
+let pagamento = 1000;
+
+// a diferença para o while é que o do while executa antes de testar a condição
+do {
+    console.log("estamos testando o do while - nessa volta o valor do pagamento é: ", pagamento);
+    pagamento += 1000;
+} while (pagamento < 5000);
 
 
 
