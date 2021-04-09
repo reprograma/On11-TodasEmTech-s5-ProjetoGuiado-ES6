@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+    const numeros = [];
+    function saidaHTML() {
+        let impar = 0;
+        let par =0;
+        let positivo = 0;
+        let negativo  = 0;
+
+        for (var i of numeros) {
+            if (isNaN(i)) return 'insira somente numeros, não é permitido texto';
+                if (Math.abs(i)%2==0) par++;
+                    else impar++;
+                         if (Math.sign(i)==-1) negativo++;
+                             else positivo++;
+        }
+
+        return `Resultado da sequencia: ${numeros.join(",")} \n impar: ${impar} \n par: ${par} \n positivo: ${positivo} \n negativo: ${negativo}`;
+    }
+   
+    function campoNulo(valor) {
+            const padrao = (!valor || valor == null || valor == undefined || valor == "" || valor == 'undefined' || valor == 'null');
+
+            if (typeof(valor)=="string") return (valor=="" || padrao);
+            if (typeof(valor)=="number") return (isNaN(valor) || padrao);
+            return true;
+        }
+
+    function entradaHTML() {
+        let numIn = prompt(`Insira um numero positivo ou negativo \n numeros já inseridos: ${numeros.join(",")}`);
+        if (campoNulo(Number(numIn))) return entradaHTML();
+
+        numeros.push(Number(numIn));
+
+        let addNum = prompt('Deseja adicionar mais um numero? y para sim, ok para não');
+        addNum = (!addNum || addNum==null || addNum==undefined)? "" : addNum.toLocaleLowerCase();
+        
+        if (addNum=="y") return entradaHTML();
+
+        alert(saidaHTML(numeros));
+
+        let novoTest = prompt('Deseja fazer uma nova consulta? y para sim, ok para não');
+        novoTest = (!novoTest || novoTest==null || novoTest==undefined)? "" : novoTest.toLocaleLowerCase();
+
+        if (novoTest=="y") location.reload();
+             else  alert('Obrigada !');
+        return;
+    }
+
+    entradaHTML();
+
+    </script>
+</body>
+
+</html>

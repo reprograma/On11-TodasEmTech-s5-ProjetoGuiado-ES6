@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <style>
+        body,
+        div,
+        ul,
+        li {
+            margin: 0px;
+            padding: 0px;
+        }
+        header {
+            background-color: whitesmoke;
+            border-bottom: 1px silver solid;
+        }
+        .header {
+            padding: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .container ul {
+            display: flex;
+            align-items: center;
+            overflow: scroll;
+        }
+
+        .produto {
+            min-width: 250px;
+            height: 300px;
+            border: 1px black solid;
+            text-align: center;
+            display: inline;
+            padding: 1em;
+            margin: 1em;
+        }
+        .produto-main {
+            height: 250px;
+        }
+        .produto-titulo {
+            font-weight: bold;
+            font-size: 25px;
+
+        }
+        .bt {
+            display: flex;
+            justify-content: space-evenly;
+            justify-items: center;
+        }
+
+        h3,
+        .total {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .container-bottom {
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            padding: 0px;
+            margin-top: 1em;
+        }
+        .container-bottom button {
+            width: 150px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>Pedido</h2>
+            <ul id='produto'>
+                <!-- lista recebida via DOM-->
+            </ul>
+            <hr>
+            <div class="container-bottom">
+                <p>valor total <strong><span id='total'></span></strong></p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </main>
+    <script src="exercicio-01.js">
+    </script>
+</body>
+
+</html>
