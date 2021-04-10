@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Pares, ímpares, positivos e negativos</h2>
+    <hr>
+    <p>Informe 5 valores Inteiros. A seguir será mostrado quantos são pares, quantos são ímpares, quantos são positivos e são negativos:</p>
+    <br>
+    <!-- <table style="width:100%">
+        <tr>
+            <th>Código</th>
+            <th>Especificação</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cachorro quente</td>
+            <td>R$ 4.00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>X-Salada</td>
+            <td>R$ 4.50</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>X-Bacon</td>
+            <td>R$ 5.00</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Torrada simples</td>
+            <td>R$ 2.00</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Refrigerante</td>
+            <td>R$ 1.50</td>
+        </tr>
+    </table> -->
+    <h3>Resultado:</h3>
+    <hr>
+    <script>
+
+        function numeros() {
+
+            // Entrada
+            // console.log('codigo:', codigo);
+            var numeros = []
+            for (let i = 0; i < numeros; i++){
+                numeros = Number(prompt("Digite o número:"))
+                // let element = num[i];
+                console.log(numeros)
+                document.write(numeros[i]+"<br/>")
+            }
+            // switch (codigo) {
+            //     case 1:
+            //         let valorCQ = 4.00.toFixed(2)
+            //         let nomeCQ = 'Cachorro quente'
+            //         calcular(valorCQ, quantidade)
+            //         console.log(valorCQ, quantidade)
+            //         imprimir(quantidade, nomeCQ, valorCQ, valorTotal)
+            //         break;
+            //     case 2:
+            //         let valorXS = 4.50.toFixed(2)
+            //         let nomeXS = 'X-Salada'
+            //         calcular(valorXS, quantidade)
+            //         imprimir(quantidade, nomeXS, valorXS, valorTotal)
+            //         break;
+            //     case 3:
+            //         let valorXB = 5.00.toFixed(2)
+            //         let nomeXB = 'X-Bacon'
+            //         calcular(valorXB, quantidade)
+            //         imprimir(quantidade, nomeXB, valorXB, valorTotal)
+            //         break;
+            //     case 4:
+            //         let valorTS = 2.00.toFixed(2)
+            //         let nomeTS = 'Torrada simples'
+            //         calcular(valorTS, quantidade)
+            //         imprimir(quantidade, nomeTS, valorTS, valorTotal)
+            //         break;
+            //     case 5:
+            //         let valorRF = 1.50.toFixed(2)
+            //         let nomeRF = 'Refrigerante'
+            //         calcular(valorRF, quantidade)
+            //         imprimir(quantidade, nomeRF, valorRF, valorTotal)
+            //         break;
+            //     default:
+            //         break;
+            //}
+
+            function calcular(valor, quantidade) {
+                return valorTotal = (valor * quantidade).toFixed(2);
+            }
+
+            function imprimir(quantidade, pedido, valorUnitario, valorTotal) {
+                return document.write(`Qtd: ${quantidade} | ${pedido} | Valor Unitário R$: ${valorUnitario} | Valor Total R$: ${valorTotal}`)
+            }
+        }
+        numeros()
+
+    </script>
+</body>
+
+</html>
