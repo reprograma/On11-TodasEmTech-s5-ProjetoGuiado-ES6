@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+
+//let codigo = prompt("Digite o codigo do item desejado: ")    
+//let quantidade = prompt("Digite a quantidade desejada do item: ")
+
+let dogao = { 
+    codigo: 1,
+    nome: "cachorro-quente",
+    preco: 4.00,
+}
+
+let salada = { 
+    codigo: 2,
+    nome: "x-salada",
+    preco: 4.50,
+}
+let bacon = { 
+    codigo: 3,
+    nome: "x-bacon",
+    preco: 5.00,
+}
+
+let torrada = { 
+    codigo: 4,
+    nome: "torrada simples",
+    preco: 2.00,
+}
+let refri = { 
+    codigo: 5,
+    nome: "refrigerante",
+    preco: 1.50,
+}
+
+let cardapio = [ dogao, salada, bacon, torrada, refri];
+
+let entrada = prompt("Digite o código e a quantidade do item: ")
+
+function lanche(entrada){
+
+    let item = entrada.split(" ")
+    let codigo = item[0]
+    console.log(codigo)
+    let quant = item[1]
+    console.log(quant)
+    let total = 0
+    console.log(dogao.codigo)
+    
+    if (dogao.codigo == codigo){
+            total = quant*dogao.preco
+            alert(`Total: R$ ${total.toFixed(2)} `)
+    } else if(salada.codigo == codigo){
+            total = quant*salada.preco
+            alert(`Total: R$ ${total.toFixed(2)} `)
+    } else if (bacon.codigo == codigo){
+            total = quant*bacon.preco
+            alert(`Total: R$ ${total.toFixed(2)} `)
+    } else if (torrada.codigo == codigo){
+            total = quant*torrada.preco
+            alert(`Total: R$ ${total.toFixed(2)} `)
+    } else if (refri.codigo == codigo){
+            total = quant*refri.preco
+            alert(`Total: R$ ${total.toFixed(2)} `)
+    } 
+    else{
+        alert("Este item não está no cardápio")
+    }
+}
+
+lanche(entrada)
+        
+
+
+
+    </script>
+</body>
+
+</html>
