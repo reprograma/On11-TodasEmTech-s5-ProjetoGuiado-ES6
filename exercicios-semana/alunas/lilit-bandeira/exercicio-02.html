@@ -10,9 +10,39 @@
 
 <body>
     <script>
+      
+      function verificar() {
+        
+        let numeros = {
+          pares: 0,
+          impares: 0,
+          positivos: 0,
+          negativos: 0
+        }
+        
+        for(i = 0; i < 5; i++) {
 
+          let num = Number(prompt('Digite um número inteiro'));
+          console.log(num)
 
+          if(num > 0) {
+            numeros.positivos++
+            (num%2 == 0) ? numeros.pares++ : numeros.impares++;     
+          } else {
+            numeros.negativos++
+            (num%2 == 0) ? numeros.pares++ : numeros.impares++;  
+          }
+        }
+        
+        console.log(`
+          ${numeros.positivos} valor(es) positivo(s); \n
+          ${numeros.negativos} valor(es) negativo(s); \n
+          ${numeros.pares} valor(es) par(es); \n
+          ${numeros.impares} valor(es) ímpar(es)
+          `);        
+      }
 
+      verificar();
 
     </script>
 </body>

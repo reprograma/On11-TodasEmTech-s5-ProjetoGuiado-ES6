@@ -10,9 +10,49 @@
 
 <body>
     <script>
+      
+      let opcoes = {
+        1: 'Álcool',
+        2: 'Gasolina',
+        3: 'Diesel',
+        4: 'FIM'
+      }
+      console.table(Object.entries(opcoes))
 
+      let combustivel = {
+        alcool: 0,
+        gasolina: 0,
+        diesel: 0,
+        fim: ''
+      }
 
+      function pesquisa() {
+        
+        
+        for(i = 0; i < 500; i++) {
 
+          let num = Number(prompt('Informe o código do combustível | 1 - Álcool | 2 - Gasolina | 3 - Diesel | ou | 4 - FIM | para finalizar o programa.' ));
+          console.log(num)
+
+          if(num > 4 || isNaN(num) || num == '' || num <= 0) {
+            console.log('Valor inválido!')
+          }
+          
+          if(num == 4) {
+            console.log('Muito Obrigada')
+            console.table(combustivel)
+            return;
+          }else if(num == 3) {
+            combustivel.diesel++
+          }else if(num == 2) {
+            combustivel.gasolina++            
+          }else {
+            combustivel.alcool++
+          }           
+        }
+      }
+
+      pesquisa();
 
     </script>
 </body>

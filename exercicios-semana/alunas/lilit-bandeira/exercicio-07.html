@@ -10,10 +10,21 @@
 
 <body>
     <script>
+      
+      let linguagens = ['JavaScript', 'Go', 'Java', 'Angular', 'Node', 'React', 'Ruby']
+      // console.log(linguagens);
+      linguagens.forEach((i, id) => {
+        switch(i[id]) {
+          case linguagens['Node']:
+              break;
+          default:
+              console.log(i);  
+        }
+      })
 
-
-
-
+      let ultimoItem = linguagens[linguagens.length - 1];
+      console.log(`o último elemento da array é o ${ultimoItem} \n A array completa é [${linguagens.join(' - ')}]`);
+     
     </script>
 </body>
 

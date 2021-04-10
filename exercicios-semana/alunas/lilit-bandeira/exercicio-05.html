@@ -9,12 +9,36 @@
 </head>
 
 <body>
-    <script>
 
+  <label for="nome">Nome: <input id='nome' type="text"></label><br><br>
+  <label for="salario">Salário (R$): <input id='salario' type="number" min='0.01' step='0.01'></label><br><br>
+  <label for="vendas">Total de vendas (R$): <input id='vendas' type="number" min='0.01' step='0.01'></label><br><br>
+  <button style=' padding: 5px; ' onclick='calculo()'>Calcular comissão</button>
+  <div id="saida"></div>
+  
+  <script>
 
+    const nome = document.getElementById('nome');
+    const salario = document.getElementById('salario');
+    const vendas = document.getElementById('vendas');
+    console.log(nome, salario, vendas);
+    
+    calculo = () => {
+      let comissao = vendas.value * .15
+      // console.log(comissao)
+      if (!nome.value || !salario.value || !vendas.value) {
+        console.log('Digite valores válidos')
+        return;
+      } else {
+        let total = (Number(salario.value) + Number(comissao)).toFixed(2)
+        console.log(`
+        Vendedor(a): ${nome.value} \n
+        TOTAL: R$ ${total}
+        `)
+      }
+    }
 
-
-    </script>
+  </script>
 </body>
 
 </html>

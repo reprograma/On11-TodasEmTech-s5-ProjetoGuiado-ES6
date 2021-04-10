@@ -9,12 +9,30 @@
 </head>
 
 <body>
-    <script>
+  
+  <label for="senha">Senha:</label>
+  <input id='senha' type="number" min='0'>
+  <button onclick='validacao()'>Login</button>
+
+  <script>
+
+    validacao = () => {
+      
+      let senha = document.getElementById('senha');
+      // console.log(senha.value)
+      if(senha.value == '2012') {
+          console.log('Acesso Permitido!'); 
+          return;
+      } else {
+          console.log('Senha Inválida!')
+      }
+    }
+
+    //fiz de uma forma muito simples, tive muito pouco tempo durante essa semana, usei input number mesmo, xero!
 
 
 
-
-    </script>
+  </script>
 </body>
 
 </html>
