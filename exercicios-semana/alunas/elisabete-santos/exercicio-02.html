@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+    
+    let numPar = 0;
+    let numImpar = 0;
+    let numPositivo = 0;
+    let numNegativo = 0;
+
+    function definindoNumeros(){
+        for ( let i=0; i<5; i++){
+            let numero = Number(prompt("Digite um Número: "));
+            
+            if(numero == ""){
+                return definindoNumeros();
+            }
+
+            if(numero%2 == 0){
+                numPar++;
+            }else if(numero%2 != 0){
+                numImpar++;
+            }
+            if(numero > 0){
+                numPositivo++;
+            }else if(numero < 0){
+                numNegativo++;
+            }
+        }
+
+            document.write(` ${numPar} Valor(es) Par(es) <br>`);
+            document.write(` ${numImpar} Valor(es) Impar(es) <br>`);
+            document.write(` ${numPositivo} Valor(es) Positivo(s) <br>`);
+            document.write(` ${numNegativo} Valor(es) Negativo(s)`);
+    }
+    definindoNumeros();
+
+    </script>
+</body>
+
+</html>

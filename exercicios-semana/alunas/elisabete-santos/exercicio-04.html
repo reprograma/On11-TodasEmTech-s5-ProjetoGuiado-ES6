@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+
+<body>
+    <script>
+
+let senha = 2002;
+
+function validarSenha(){
+
+    let senhaUsuario = Number(prompt(" Informe a Senha: "));
+
+    while( senha != senhaUsuario){
+        alert ("Senha Inválida");
+        return validarSenha();
+    }
+    alert ("Acesso Permitido");
+} 
+validarSenha();
+
+    </script>
+</body>
+
+</html>
