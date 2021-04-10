@@ -10,11 +10,38 @@
 
 <body>
     <script>
+      function teste(){
+           
+        var par = 0, impar = 0,positivo = 0, negativo = 0
+        var i = 0
+        
+        while (i< 5 ){
+            i++
+            let num = Number(prompt('Por favor informe um número inteiro: '));    
+        
+         if (num>0){
+                positivo++    
+         }   if (num<0){
+                negativo++
+         }   if  (num%2==0){
+                par++        
+         }   if (num%2 != 0){
+                impar++ 
+         }
+        }
+        
+        document.write(`Valores Par: `, par);
+        document.write ("<br>");
+        document.write(`Valores Impar: `, impar);
+        document.write ("<br>");
+        document.write(`Valores Positivo: `,positivo);
+        document.write ("<br>");
+        document.write(`Valores Negativo: `,negativo);
+        
+     }
+     teste();
 
-
-
-
-    </script>
+     </script>
 </body>
 
 </html>
