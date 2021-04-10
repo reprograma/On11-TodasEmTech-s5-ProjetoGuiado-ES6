@@ -10,7 +10,19 @@
 
 <body>
     <script>
+        function Senha(){
+            let num = Number(prompt("Digite a senha para acessar o sistema."));
 
+            if (num == 2002){
+                alert("Acesso Liberado");
+            } else {
+                alert("Senha Inválida, você tem mais 2 tentativas!");
+                   return Senha();
+            }
+
+        }
+
+        Senha();
 
 
 
