@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+
+    <script>
+
+    function Lanche(){
+
+    let codigoLanche = Number(prompt(" Digite o código do produto :  \n 1- Cachorro Quente R$4,00 \n 2- X-Salada R$4,50 \n 3- X-Bacon R$5,00 \n 4- Torrada Simples R$2,00 \n 5- Refrigerante R$1,50 "));
+    
+    if (codigoLanche == 1) {
+    produto = "Cachorro Quente";
+    quantidade = prompt("Digite quantos " + produto + " você deseja?","");
+    total = quantidade * 4.00;
+    alert("Seu pedido totaliza R$ " + total.toFixed(2));
+    }
+   
+    else if (codigoLanche == 2){
+    produto = "X - Salada";
+    quantidade = prompt("Digite quantos " + produto + " você deseja?","");
+    total = quantidade * 4.50;
+    alert("Seu pedido totaliza R$ " + total.toFixed(2));
+    }
+   
+    else if (codigoLanche == 3){
+    produto = "X - Bacon";
+    quantidade = prompt("Digite quantos " + produto + " você deseja?","");
+    total = quantidade * 5.00;
+    alert("Seu pedido totaliza R$ " + total.toFixed(2));
+    }
+  
+    else if (codigoLanche == 4){
+    produto = "Torrada Simples";
+    quantidade = prompt("Digite quantas " + produto + " você deseja?","");
+    total = quantidade * 2.00;
+    alert("Seu pedido totaliza R$ " + total.toFixed(2));
+    }
+   
+    else if (codigoLanche == 5){
+    produto = "Refrigerante";
+    quantidade = prompt("Digite quantos " + produto + " você deseja?","");
+    total = quantidade * 1.50;
+    alert("Seu pedido totaliza R$ " + total.toFixed(2));
+    }
+
+  }
+
+Lanche();
+
+
+//Queria ter colocado um else para alertar quando fosse digitado o numero incorreto, mais não consegui. Se possível depois gostaria de rever o código.
+
+    </script>
+  
+</body>
+
+</html>
