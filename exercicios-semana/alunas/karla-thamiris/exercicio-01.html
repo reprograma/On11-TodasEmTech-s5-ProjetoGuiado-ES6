@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <table border="3">
+        <caption>MERENDINHA</caption>
+        <tr>
+            <td>CÓDIGO</td>
+            <td>ESPECIFICAÇÃO</td>
+            <td>PREÇO</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cachorro-quente</td>
+            <td>R$ 4,00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>X-Salada</td>
+            <td>R$ 4,50</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>X-Bancon</td>
+            <td>R$ 5,00</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Torrada Simples</td>
+            <td>R$ 2,00</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Refrigerante</td>
+            <td>R$ 1,50</td>
+        </tr>
+    </table>
+
+    <label for="entrada">Insira o código: </label>
+    <div class="console-entrada">
+        <label class="arrow" for="entrada"></label>
+        <input type="text" id="entrada">
+    </div>    
+
+    <label for="qtd-entrada">Quantidade de lanches: </label>
+    <div class="console-entrada">
+        <label class="arrow" for="qtd-entrada"></label>
+        <input type="text" id="qtd-entrada" value>
+    </div>
+
+    <button id="calcula" onclick="merendinha()">Fechar pedido</button>
+
+        <script>
+        //USAR SWITCH CASE
+        /*Com base na tabela abaixo, escreva um programa que leia o código de um item e a quantidade deste item. A seguir, calcule e mostre o valor da conta a pagar.
+        Entrada
+        O arquivo de entrada contém dois valores inteiros correspondentes ao código e à quantidade de um item conforme tabela acima.
+
+        Saída
+        O arquivo de saída deve conter a mensagem "Total: R$ " seguido pelo valor a ser pago, com 2 casas após o ponto decimal.*/
+        let codigo = document.getElementById("entrada");
+        let quantidade = document.getElementById("qtd-entrada");
+        let total = document.getElementById("saida");
+
+        function merendinha(){
+            let getCodigo = codigo.value;
+            let getQuantidade = quantidade.value;
+            var totalPagar;
+            
+            switch (getCodigo) {
+                case '1':
+                    totalPagar = 4 * getQuantidade
+                    break
+                case '2':
+                    totalPagar = 4.5 * getQuantidade
+                    break
+                case '3':
+                    totalPagar = 5 * getQuantidade
+                    break;
+                case '4':
+                    totalPagar = 2 * getQuantidade
+                    break
+                case '5':
+                    totalPagar = 1.5 * getQuantidade
+                    break   
+                default:
+                    alert('ERRO: Valor indefinido')
+                    break
+            }
+            alert('Preço total do seu lanche: R$' + totalPagar.toFixed(2))
+        }
+        </script>
+    </body>
+</html>
