@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+
+<body>
+    <script>
+
+        const nome = prompt("Informe seu nome: ");
+        const salario = Number(prompt("Informe seu salário fixo: "));
+        var vendas = Number(prompt("Qual o valor total das vendas desse mês: "));
+        var desc = vendas *0.15;
+
+        document.write("Funcionario: ",nome);
+        document.write("<br>");
+        document.write("Salário: ",salario.toFixed(2));
+        document.write("<br>");
+        document.write(`Total R$: ${(salario+desc).toFixed(2)}`);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+
+<body>
+    <script>
+        function Senha(){
+            let num = Number(prompt("Digite a senha para acessar o sistema."));
+
+            if (num == 2002){
+                alert("Acesso Liberado");
+            } else {
+                alert("Senha Inválida, você tem mais 2 tentativas!");
+                   return Senha();
+            }
+
+        }
+
+        Senha();
+
+
+
+    </script>
+</body>
+
+</html>

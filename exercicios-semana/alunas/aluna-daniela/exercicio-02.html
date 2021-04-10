@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+      function teste(){
+           
+        var par = 0, impar = 0,positivo = 0, negativo = 0
+        var i = 0
+        
+        while (i< 5 ){
+            i++
+            let num = Number(prompt('Por favor informe um número inteiro: '));    
+        
+         if (num>0){
+                positivo++    
+         }   if (num<0){
+                negativo++
+         }   if  (num%2==0){
+                par++        
+         }   if (num%2 != 0){
+                impar++ 
+         }
+        }
+        
+        document.write(`Valores Par: `, par);
+        document.write ("<br>");
+        document.write(`Valores Impar: `, impar);
+        document.write ("<br>");
+        document.write(`Valores Positivo: `,positivo);
+        document.write ("<br>");
+        document.write(`Valores Negativo: `,negativo);
+        
+     }
+     teste();
+
+     </script>
+</body>
+
+</html>

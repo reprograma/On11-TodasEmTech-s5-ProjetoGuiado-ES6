@@ -8,7 +8,7 @@ function limpar() {
     saida.value = "";
     return;
 }
-
+ 
 //     A  B  C  D  E  F  G  H  I  J  K  L  M
 //     0  1  2  3  4  5  6  7  8  9  10 11 12
 
@@ -16,12 +16,12 @@ function limpar() {
 //    13 14 15 16 17 18 19 20 21 22 23  24  25
 
 
-// const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-const letrasMaiusculas = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+const letrasMaiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+//const letrasMaiusculas = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 // exemplo de código que pega o valor de um texto digitado pelo usuário
 // var texto = prompt("Digite um texto: ");
-// var texto = entrada.value;
+// var texto = entrada.value;  
 
 function cifrar() {
     const palavras = entrada.value.split(" ");
@@ -38,8 +38,8 @@ function cifrar() {
     
     //verifica se a chave de deslocamento existe e se alguma palavra foi digitada
      // ver artigo https://blog.rocketseat.com.br/entendendo-falsy-e-truthy-no-javascript/
-    if (deslocamento && palavras.length > 0) {
-        for (itemPalavras of palavras) {
+     if (deslocamento && palavras.length > 0) {
+         for (itemPalavras of palavras) {
 
             for (letra of itemPalavras) {
                 // precisamos pegar o index da letra no array do alfabeto
