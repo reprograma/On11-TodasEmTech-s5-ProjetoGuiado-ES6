@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,45 @@
 <body>
     <script>
 
+        function pesquisa() {
 
+            let alcool = 0
+            let gasolina = 0
+            let diesel = 0
+            let codigo = 0
 
+            do {
+                let codigo = Number(prompt("Digite: 1-Álcool | 2-Gasolina | 3-Diesel | 4-Fim"))
 
+                if (codigo != 4) {
+                    if (codigo == 1) {
+                        alcool++
+                    } else if (codigo == 2) {
+                        gasolina++
+                    } else if (codigo == 3) {
+                        diesel++
+                    } else {
+                        alert('Opção inválida!')
+                        return pesquisa()
+                    }
+                } else {
+                    break
+                }
+
+            } while (codigo != 4)
+
+            imprimir(alcool, gasolina, diesel)
+            
+        }
+        function imprimir(alcool, gasolina, diesel) {
+            document.write('MUITO OBRIDADO' + '<br/>')
+            document.write(`Álcool: ${alcool}<br/>`)
+            document.write(`Gasolina: ${gasolina}<br/>`)
+            document.write(`Diesel: ${diesel}<br/>`)
+        }
+
+        pesquisa()
+    
     </script>
 </body>
 
