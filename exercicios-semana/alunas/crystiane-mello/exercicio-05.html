@@ -10,7 +10,11 @@
 
 <body>
     <script>
+ let nome = prompt("Digite o nome: ");
+        let salario = Number(prompt("Digite seu salario fixo: "));
+        let vendas = Number(prompt("Digite o montante total de vendas"));
 
+    document.write(`TOTAL = R$ ${(salario + (0.15*vendas)).toFixed(2)}`)
 
 
 
