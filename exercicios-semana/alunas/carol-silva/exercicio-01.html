@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body bgcolor="#FF5733"> 
+    <h1 style="color:white;">Exercício 01 - Lanche </h1>
+
+    <script>
+
+//https://www.urionlinejudge.com.br/judge/pt/problems/view/1038
+
+
+        var cachorroQuente = [1, 4];
+        var xSalada = [2, 4.5];
+        var xBacon = [3, 5];
+        var torradaSimples = [4, 2];
+        var refrigerante = [5, 1.5];
+
+
+        function calculoLanches() {
+
+            var numeroLanche = Number(prompt("Escreva o numero do lanchinho que você gostaria de pedir:"));
+            var quantidadeLanche = Number(prompt("Escreva a quantidade de lanchinhos a serem devorados:"));
+
+            if (numeroLanche == 1) {
+
+                document.write("Total: R$ " + (cachorroQuente[1] * quantidadeLanche).toFixed(2));
+            }
+
+            if (numeroLanche == 2) {
+
+                document.write("Total: R$ " + (xSalada[1] * quantidadeLanche).toFixed(2));
+            }
+
+            if (numeroLanche == 3) {
+
+                document.write("Total: R$ " + (xBacon[1] * quantidadeLanche).toFixed(2));
+            }
+
+            if (numeroLanche == 4) {
+
+                document.write("Total: R$ " + (torradaSimples[1] * quantidadeLanche).toFixed(2));
+            }
+
+            if (numeroLanche == 5) {
+
+                document.write("Total: R$ " + (refrigerante[1] * quantidadeLanche).toFixed(2));
+            }
+           }
+         calculoLanches();
+         
+
+//FALTA RETURN PARA VOLTAR PARA calculoLanches PARA FICAR PEDIDO A INFO VARIAS VEZES AO INVES DE TER QUE F5 NA PAGINA
+
+    </script>
+</body>
+
+</html>

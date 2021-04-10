@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body bgcolor="BC8F8F"> 
+    <h1 style="color:white;">Exercício 02 - Pares, Ímpares, Positivos e Negativos</h1>
+    <script>
+//https://www.urionlinejudge.com.br/judge/pt/problems/view/1066
+
+
+var even = 0;
+var odd = 0;
+var positive = 0;
+var negative = 0;
+
+function classNumbers()
+{
+for(var i = 0; i < 5; i++){ 
+    var digitarNumeros = Number(prompt("Digite um número:"));
+ 
+
+ if (digitarNumeros%2 == 0){
+even++;
+ }
+
+else if(digitarNumeros%2 != 0){
+odd++;
+}
+
+if(digitarNumeros > 0){
+positive++;
+}
+
+else if(digitarNumeros < 0){
+negative++;
+}
+
+}
+
+document.write(even + " valor(es) par(es) \n") 
+document.write(odd + " valor(es) impar(es) \n")
+document.write(positive + " valor(es) positivo(s) \n")
+document.write(negative + " valor(es) negativo(s) \n")
+
+}
+
+
+classNumbers()
+
+// não entendi esse exercicio, so consegui fazer com ajuda, mas mesmo assim não entendi
+
+</script>
+</body>
+
+</html>

@@ -36,7 +36,8 @@ O [URI Online Judge](https://www.urionlinejudge.com.br/judge/pt/login) é uma pl
 
 - [Exercício 01](https://www.urionlinejudge.com.br/judge/pt/problems/view/1038)
 
-- [Exercício 02](https://www.urionlinejudge.com.br/judge/pt/problems/view/1066)
+- [Exercício 02](https://www.urionlinejudge.com.br/judge/pt/problems/view/1066
+)
 
 - [Exercício 03](https://www.urionlinejudge.com.br/judge/pt/problems/view/1134)
 

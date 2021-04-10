@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body bgcolor="#DAF7A6"> 
+    <h1 style="color:white;">Exercício 03 - Tipo de Combustível</h1>
+    
+    <script>
+//https://www.urionlinejudge.com.br/judge/pt/problems/view/1134
+
+let alcool = 0;
+let gasolina = 0;
+let diesel = 0;
+
+function combustível(){
+    for(var i = 0; i < 5; i++){}
+var digitarCodigo = Number(prompt("Informe o código do seu combustível de preferência"));
+
+//  if (digitarCodigo >=5 ) {
+//         alert("Código inválido - fora da faixa de 1 a 4 - favor digitar um novo código"); 
+//         return(combustível())
+//     }
+
+//     if (digitarCodigo == 4) {
+    
+     
+//     }
+    switch (digitarCodigo) {
+  case 1: alcool++;
+  return(combustível())
+    break;
+
+    case 2: gasolina++;
+    return(combustível())
+    break;
+
+    case 3: diesel++;
+    return(combustível())
+    break;
+
+    case 4: alert("MUITO OBRIGAD@");
+    break;
+
+  default:
+  alert("Código inválido - fora da faixa de 1 a 4 - favor digitar um novo código"); 
+        return(combustível())
+        break;
+}
+
+document.write("    Alcool: " + alcool) 
+document.write("    Gasolina: " + gasolina) 
+document.write("    Diesel: " + diesel) 
+
+}
+
+combustível()
+
+
+
+//  if (digitarNumeros%2 == 0){
+// even++;
+//  }
+
+// else if(digitarNumeros%2 != 0){
+// odd++;
+// }
+
+// if(digitarNumeros > 0){
+// positive++;
+// }
+
+// else if(digitarNumeros < 0){
+// negative++;
+// }
+
+// }
+
+// document.write(even + " valor(es) par(es) \n") 
+// document.write(odd + " valor(es) impar(es) \n")
+// document.write(positive + " valor(es) positivo(s) \n")
+// document.write(negative + " valor(es) negativo(s) \n")
+
+// }
+
+
+// classNumbers()
+
+    </script>
+</body>
+
+</html>

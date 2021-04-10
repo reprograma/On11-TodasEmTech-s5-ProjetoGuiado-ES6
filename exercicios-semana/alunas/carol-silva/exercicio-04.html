@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+
+<body bgcolor="SS3245"> 
+    <h1 style="color:white;">Exercício 04 - Senha Fixa</h1>
+
+    <script>
+        
+//https://www.urionlinejudge.com.br/judge/pt/problems/view/1114
+
+const senha = 2002;
+var i = 1
+
+function senhaFixa(){ 
+    var digiteSenha = Number(prompt("Digite sua Senha"));
+        if(digiteSenha == senha){
+            document.write("<p>" + "Acesso Permitido".fontcolor("white") + "</p>")
+        }
+        
+        else
+        {
+         while(digiteSenha != senha){   
+            
+           var digiteSenha = Number(prompt("Senha Inválida - Digite sua senha novamente"));
+        
+           if(digiteSenha == senha){
+            document.write("<p>" + "Acesso Permitido".fontcolor("white") + "</p>")
+        break
+    }
+        }
+        
+    }
+    }
+    
+    senhaFixa()
+
+
+    //como fazer para sempre aparecer a mensagem sem precisar repetir o if no final (qdo estava so em cima, so mostrava a mensagem se acertasse de primeira)
+
+    </script>
+</body>
+
+</html>
