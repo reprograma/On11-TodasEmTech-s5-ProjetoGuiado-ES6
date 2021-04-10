@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+
+            let alcool=0;
+            let gasolina=0;
+            let diesel=0;
+            let num =0;
+
+        function posto(){
+           
+            do{
+                num = Number(prompt("Digite o comando: "))
+                if(num !=4){
+                    if(num ==1){
+                        alcool++;
+                    } else if(num==2){
+                        gasolina++;
+                    } else if(num==3){
+                        diesel++;
+                    }else{
+                        alert("Opção inválida, tente novamente.")
+                        return posto() // caso o usuário insira qualquer outro valor diferente de 4, a função pede uma nova entrada
+                    }
+                }else{
+                    break;
+                }
+             } while(num !=4);
+            
+             alert(`MUITO OBRIGADO \nAlcool: ${alcool} \nGasolina: ${gasolina} \nDiesel: ${diesel} `)
+        }
+    posto()
+
+
+
+
+    </script>
+</body>
+
+</html>
