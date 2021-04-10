@@ -11,7 +11,16 @@
 <body>
     <script>
 
+        const nome = prompt("Informe seu nome: ");
+        const salario = Number(prompt("Informe seu salário fixo: "));
+        var vendas = Number(prompt("Qual o valor total das vendas desse mês: "));
+        var desc = vendas *0.15;
 
+        document.write("Funcionario: ",nome);
+        document.write("<br>");
+        document.write("Salário: ",salario.toFixed(2));
+        document.write("<br>");
+        document.write(`Total R$: ${(salario+desc).toFixed(2)}`);
 
 
     </script>
