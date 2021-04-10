@@ -55,66 +55,34 @@
     </table> -->
     <h3>Resultado:</h3>
     <hr>
+
     <script>
 
-        function numeros() {
+        let par = 0
+        let impar = 0
+        let positivo = 0
+        let negativo = 0
+        let neutro = 0
+      
+        for (let i = 0; i < 5; i++) {
 
-            // Entrada
-            // console.log('codigo:', codigo);
-            var numeros = []
-            for (let i = 0; i < numeros; i++){
-                numeros = Number(prompt("Digite o número:"))
-                // let element = num[i];
-                console.log(numeros)
-                document.write(numeros[i]+"<br/>")
-            }
-            // switch (codigo) {
-            //     case 1:
-            //         let valorCQ = 4.00.toFixed(2)
-            //         let nomeCQ = 'Cachorro quente'
-            //         calcular(valorCQ, quantidade)
-            //         console.log(valorCQ, quantidade)
-            //         imprimir(quantidade, nomeCQ, valorCQ, valorTotal)
-            //         break;
-            //     case 2:
-            //         let valorXS = 4.50.toFixed(2)
-            //         let nomeXS = 'X-Salada'
-            //         calcular(valorXS, quantidade)
-            //         imprimir(quantidade, nomeXS, valorXS, valorTotal)
-            //         break;
-            //     case 3:
-            //         let valorXB = 5.00.toFixed(2)
-            //         let nomeXB = 'X-Bacon'
-            //         calcular(valorXB, quantidade)
-            //         imprimir(quantidade, nomeXB, valorXB, valorTotal)
-            //         break;
-            //     case 4:
-            //         let valorTS = 2.00.toFixed(2)
-            //         let nomeTS = 'Torrada simples'
-            //         calcular(valorTS, quantidade)
-            //         imprimir(quantidade, nomeTS, valorTS, valorTotal)
-            //         break;
-            //     case 5:
-            //         let valorRF = 1.50.toFixed(2)
-            //         let nomeRF = 'Refrigerante'
-            //         calcular(valorRF, quantidade)
-            //         imprimir(quantidade, nomeRF, valorRF, valorTotal)
-            //         break;
-            //     default:
-            //         break;
-            //}
+            let numeros = Number(prompt('Digite números: '))
 
-            function calcular(valor, quantidade) {
-                return valorTotal = (valor * quantidade).toFixed(2);
+            if (numeros % 2 == 0) {
+                par++
+            } else {
+                impar++
             }
 
-            function imprimir(quantidade, pedido, valorUnitario, valorTotal) {
-                return document.write(`Qtd: ${quantidade} | ${pedido} | Valor Unitário R$: ${valorUnitario} | Valor Total R$: ${valorTotal}`)
+            if (numeros > 0) {
+                positivo++
+            } else {
+                negativo++
             }
         }
-        numeros()
+        
+        document.write(`Números pares: ${par} | Números ímpares: ${impar} | Números positivos: ${positivo} | Números negativos: ${negativo}`)   
 
     </script>
 </body>
-
 </html>
