@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 02</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 02</title>
+    </head>
 
-<body>
-    <script>
-        /*
-        Leia 5 valores Inteiros. A seguir mostre quantos valores digitados foram pares, quantos valores digitados foram ímpares, quantos valores digitados foram positivos e quantos valores digitados foram negativos.
+    <body>
+        <script>
+            let numeros = [8, -3, 2, -5, 13]
+            let contPares = 0
+            let contImpares = 0
+            let contNegativos = 0
+            let contPositivos = 0
 
-        Entrada
-        O arquivo de entrada contém 5 valores inteiros quaisquer.
+            for (item of numeros) {
+                
+                if (item % 2 === 0) {
+                    contPares++                
+                } else {
+                contImpares++
+                }
 
-        Saída
-        Imprima a mensagem conforme o exemplo fornecido, uma mensagem por linha, não esquecendo o final de linha após cada uma.*/
-
-        let numeros = [8, -3, 2, -5, 13]
-        let contPares = 0
-        let contImpares = 0
-        let contNegativos = 0
-        let contPositivos = 0
-
-        for (item of numeros) {
-            
-            if (item % 2 === 0) {
-                contPares++                
-            } else {
-               contImpares++
+                if (item < 0){
+                    contNegativos++
+                }else{
+                    contPositivos++
+                }
             }
 
-            if (item < 0){
-                contNegativos++
-            }else{
-                contPositivos++
-            }
-        }
-        document.write(`Há ${contPares} números pares e ${contImpares} números ímpares <br>`) 
-        document.write(`${contNegativos} núemro negativos e ${contPositivos} números positivos.`)
-        
-    </script>
-</body>
-
+            document.write(`Há ${contPares} números pares e ${contImpares} números ímpares <br>`) 
+            document.write(`${contNegativos} núemro negativos e ${contPositivos} números positivos.`)               
+        </script>
+    </body>
 </html>
