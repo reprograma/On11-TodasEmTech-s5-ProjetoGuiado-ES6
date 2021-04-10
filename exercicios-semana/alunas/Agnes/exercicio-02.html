@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+           let totalPares=0;
+           let totalImpares =0;
+           let totalPositivos =0;
+           let totalNegativos = 0;
+       var num1= Number(prompt("Digete o valor 1"));
+       var num2= Number(prompt("Digete o valor 2"));
+       var num3= Number(prompt("Digete o valor 3"));
+       var num4= Number(prompt("Digete o valor 4"));
+       var num5= Number(prompt("Digete o valor 5"));
+
+          var numeros = [ num1, num2, num3, num4, num5];
+
+
+          for ( var i=0; i < numeros.length; i++){
+
+            if( numeros[i] % 2 == 0){
+
+                totalPares++;
+
+
+             
+
+
+
+            }
+            if( numeros[i] %2 != 0 ){
+
+
+                  totalImpares++;
+
+
+
+
+            }
+             if( numeros[i]>=0){
+                 
+                     totalPositivos++;
+
+
+
+             }
+             if( numeros[i]<0){
+                 
+                 totalNegativos++;
+
+
+
+         }
+              
+      
+         
+ 
+
+
+
+
+
+
+
+
+
+          }
+          alert( totalPares+" valor(es) par(es)\n"+ totalImpares+" valor(es) impar(es)\n"+ totalPositivos+" valor(es) positivo(s)\n"+totalNegativos+" valor(es) negativo(s)");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

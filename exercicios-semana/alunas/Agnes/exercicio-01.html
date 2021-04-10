@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+             Carrrinho();
+        
+           function Carrrinho (){
+
+            var cardapio = prompt("Digite o codigo do item que deseja:\n 1 | Cachorro quente | R$ 4,00\n2 | X-Salada | R$5,50\n3 | X-bacon | R$6,00\n4 | X-egg | R$6,30\n5 | Refrigerante | R$2,00    ");
+                  
+                   
+
+                  if( !cardapio ){    return Carrrinho();                                                        }else{
+                    var quantidade= Number(prompt("Quantos você irá querer? "));
+
+                    if( !quantidade){ 
+                        alert("Opção invalida")
+                        
+                        return Carrrinho()}else{
+                                      switch(cardapio){
+                    case "1": alert(" Valor final: R$"+ ( 4.00 *quantidade));
+                    break;
+                    case "2": alert(" Valor final: R$"+ ( 5.50 *quantidade));
+                    break;
+                    case"3": alert(" Valor final: R$"+ ( 6.00 *quantidade));
+                    break;
+                    case"4": alert(" Valor final: R$"+ ( 6.30 *quantidade));
+                    break;
+                    case"5": alert(" Valor final: R$"+ ( 2.00 *quantidade));
+                    break;
+                                      }         
+                    
+
+
+                  }}
+                    
+
+                   
+
+
+
+           }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
