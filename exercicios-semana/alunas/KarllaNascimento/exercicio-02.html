@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+
+   let valorUm = Number(prompt("Digite um número:"))
+   let valorDois = Number(prompt("Digite o segundo número:"))
+   let valorTrês = Number(prompt("Digite o terceiro número:"))
+   let valorQuatro = Number(prompt("Digite o quarto número:"))
+   let valorCinco = Number(prompt("Digite o quinto número:"))
+
+   let valoresT = [valorUm, valorDois, valorTrês, valorQuatro, valorCinco]
+
+function analisar (valoresT){
+   let par = 0
+   let impar = 0
+   let positivo = 0
+   let negativo = 0
+
+      if(valoresT % 2 == 0){
+         par++
+      } else if (valoresT % 2 != 0){
+         impar++
+      } else if (valoresT > 0){
+         positivo++
+      } else (valoresT < 0){
+         negativo++
+      }
+   
+}
+alert(`${par} valor(es) par(es), ${impar} valor(es) impar(es), ${positivo} valor(es) positivo(s) e ${negativo} valor(es) negativo(s)`)
+
+analisar()
+
+    </script>
+</body>
+
+</html>
