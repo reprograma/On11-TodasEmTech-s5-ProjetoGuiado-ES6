@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,21 @@
 <body>
     <script>
 
+        const linguagens = ['JavaScript', 'Go', 'Java', 'Angular', 'Node', 'React', 'Ruby']
 
+        console.log(linguagens)
 
+        for (let i in linguagens) {
+
+            if (linguagens[i] == 'Node') {
+                break
+            } else {
+                alert(linguagens[i])
+            }
+        }
+
+        let ultimaVariavel = linguagens[linguagens.length-1]
+         document.write('Última variável do array: ',  ultimaVariavel)
 
     </script>
 </body>
