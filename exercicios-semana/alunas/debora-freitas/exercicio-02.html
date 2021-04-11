@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+       
+        var num1 = Number(prompt("Digite o primeiro numero"))
+        var num2 = Number(prompt("Digite o segundo numero"))
+        var num3 = Number(prompt("Digite o terceiro numero"))
+        var num4 = Number(prompt("Digite o quarto numero"))
+        var num5 = Number(prompt("Digite o quinto numero"))
+
+        var numeros = [num1,num2,num3,num4,num5]
+
+        function leitura(numeros){
+            
+            var par = 0
+            var impar = 0
+            var positivo = 0
+            var negativo = 0
+
+
+        for(i=0; i< numeros.length; i++){
+
+        if(numeros[i]%2 == 0){
+        par++;
+        } else{
+            impar++};
+
+        if(numeros[i] >0){
+        positivo++;
+
+        } else if(numeros[i]< 0){
+            negativo++;
+        }
+    } 
+
+    document.write(Number(par) + "valor(es) par(es)<br/>")
+    document.write(Number(impar) + "valor(es) impar(es)<br/>")
+    document.write(Number(positivo) + "valor(es) positivo(s)<br/>")
+    document.write(Number(negativo) +"valor(es) negativo(s)<br/>")
+
+              
+    }
+
+    
+
+           
+        leitura(numeros)
+
+
+
+
+    </script>
+</body>
+
+</html>
