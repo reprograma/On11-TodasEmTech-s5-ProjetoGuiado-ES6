@@ -10,10 +10,26 @@
 
 <body>
     <script>
-
-
-
-
+        function paresImparesPositivosNegativos() {
+            const numeros = [];
+            let numerosPares = [];
+            let numeroImpares = [];
+            let numeroPositivos = [];
+            let numeroNegativos = [];
+            for (i = 0; i <= 4; i++){
+                numeros.push(+prompt('Insira um número inteiro:'));
+                console.log(numeros[i]);
+                numerosPares = numeros.filter(numero => numero % 2 === 0);
+                numerosImpares = numeros.filter(numero => numero % 2 !== 0);
+                numerosPositivos = numeros.filter(numero => numero > 0);
+                numerosNegativos = numeros.filter(numero => numero < 0);
+            }
+            alert(`${Object.keys(numerosPares).length} valor(es) par(es)`);
+            alert(`${Object.keys(numerosImpares).length} valor(es) ímpar(es)`);
+            alert(`${Object.keys(numerosPositivos).length} valor(es) positivo(s)`);
+            alert(`${Object.keys(numerosNegativos).length} valor(es) negativo(s)`);
+        }
+        paresImparesPositivosNegativos();
     </script>
 </body>
 

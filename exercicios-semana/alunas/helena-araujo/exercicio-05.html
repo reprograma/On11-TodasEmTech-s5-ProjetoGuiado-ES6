@@ -10,10 +10,14 @@
 
 <body>
     <script>
-
-
-
-
+        function salarioComBonus() {
+            const nome = prompt('Insira seu nome:');
+            const salarioFixo = +prompt('Insira seu salário fixo:');
+            const vendasTotal = +prompt('Insira seu valor total de vendas:');
+            const salarioTotal = (vendasTotal * 0.15) + salarioFixo;
+            alert(`TOTAL = R$ ${salarioTotal.toFixed(2)}`);
+        }
+        salarioComBonus()
     </script>
 </body>
 

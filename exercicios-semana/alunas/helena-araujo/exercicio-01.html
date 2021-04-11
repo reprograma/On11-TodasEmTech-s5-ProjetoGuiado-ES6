@@ -10,10 +10,44 @@
 
 <body>
     <script>
-
-
-
-
+        const lanches = [
+            {
+                codigo: 1,
+                especificacao: "Cachorro Quente",
+                preco: 4,
+            },
+            {
+                codigo: 2,
+                especificacao: "X-Salada",
+                preco: 4.50,
+            },
+            {
+                codigo: 3,
+                especificacao: "X-Bacon",
+                preco: 5,
+            },
+            {
+                codigo: 4,
+                especificacao: "Torrada Simples",
+                preco: 2,
+            },
+            {
+                codigo: 5,
+                especificacao: "Refrigerante",
+                preco: 1.50,
+            }
+        ];
+        function comprarLanches(){
+            const codigoCompra = +prompt('Insira o código do lanche:');
+            const quantidade = +prompt('Insira a quantidade de lanches:');
+            const foundCodigo = lanches.find(lanche => lanche.codigo === codigoCompra);
+            if (!foundCodigo) {
+                alert('Insira um código de lanche válido!');
+                return comprarLanches();
+            }
+            alert(`Total: R$ ${(foundCodigo.preco * quantidade).toFixed(2)}`);
+        }
+        comprarLanches();
     </script>
 </body>
 

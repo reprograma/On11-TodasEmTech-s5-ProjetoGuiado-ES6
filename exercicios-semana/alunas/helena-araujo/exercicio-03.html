@@ -10,10 +10,32 @@
 
 <body>
     <script>
-
-
-
-
+        function tipoCombustivel() {
+            let alcool = 0;
+            let gasolina = 0;
+            let diesel = 0;
+            do {
+                var entrada = +prompt('Qual tipo de combustível prefere? 1 para alcool, 2 para gasolina, 3 para diesel e 4 para sair');
+                switch (entrada) {
+                    case 1:
+                        alcool++;
+                        break;
+                    case 2:
+                        gasolina++;
+                        break;
+                    case 3:
+                        diesel++;
+                        break;
+                    case 4:
+                        break;
+                    default:
+                        alert('Insira uma escolha válida!')
+                        break;
+                }
+            } while (entrada != 4);
+            alert('Muito obrigada!\nÁlcool: ' + alcool +'\nGasolina: ' + gasolina + '\nDiesel: ' + diesel);
+        }
+        tipoCombustivel()
     </script>
 </body>
 

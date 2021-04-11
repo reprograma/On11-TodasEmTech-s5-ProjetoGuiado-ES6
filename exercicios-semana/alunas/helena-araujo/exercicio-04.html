@@ -10,10 +10,17 @@
 
 <body>
     <script>
-
-
-
-
+        function senhaFixa() {
+            var chave = +prompt('Insira a senha correta:');
+            if (chave == 2002) {
+                alert('Acesso Permitido');
+            }
+            else {
+                alert('Senha invalida');
+                return senhaFixa();
+            }
+        }
+        senhaFixa();
     </script>
 </body>
 
