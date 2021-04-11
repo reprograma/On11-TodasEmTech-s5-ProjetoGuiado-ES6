@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,20 @@
 <body>
     <script>
 
+        function salarioBonus() {
+            
+            let nome = prompt('Informe o nome')
+            let salarioFixo = Number(prompt('Informe o salário'))
+            let totalVendas = Number(prompt('Valor total das vendas'))
 
+            let valorTotal = salarioFixo + (totalVendas * 0.15)
+            // let totalMes = salario + totalVendas
 
+            document.write(`TOTAL = ${valorTotal.toFixed(2)}`)
+
+        }
+
+        salarioBonus()
 
     </script>
 </body>
