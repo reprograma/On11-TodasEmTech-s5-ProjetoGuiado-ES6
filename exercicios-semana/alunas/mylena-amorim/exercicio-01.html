@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+
+<label for="">Digite o código do produto</label>
+<input type="number" id="codigo">
+<label for="">Digite a quantidade</label>
+<input type="number" id="qtd">
+    
+<button onclick='calcular()'>Calcula</button>
+    
+    <script>
+
+    function calcular(){
+        var cachorroQ = 4.00;
+        var xSalada = 4.50;
+        var xBacon = 5.00;
+        var torrada = 2.00;
+        var refrigerante = 1.50;
+
+        var valor = 0;
+
+        var codi = document.getElementById("codigo");
+        var qtd = document.getElementById("qtd");
+
+        if(codi==1){
+            valor = (cachorroQ * qtd).toFixed(2);
+            return `Total: R$ ${valor}`;
+        }
+        else if(codi==2){
+            valor = (xSalada * qtd).toFixed(2);
+            return `Total: R$ ${valor}`;
+        }
+        else if(codi==3){
+            valor = (xBacon * qtd).toFixed(2);
+            return `Total: R$ ${valor}`;
+        }
+        else if(codi==4){
+            valor = (torrada * qtd).toFixed(2);
+            return `Total: R$ ${valor}`;
+        }
+        else if(codi==5){
+            valor = (refrigerante * qtd).toFixed(2);
+            return `Total: R$ ${valor}`;
+        }
+    }
+
+    </script>
+</body>
+
+</html>

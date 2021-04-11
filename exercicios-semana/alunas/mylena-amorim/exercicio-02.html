@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+  
+    <script>
+        function calcular(){
+            var number, par, impar, positivo, negativo;
+            var valor = new Array();
+
+            for(var i = 0; i<5; i++){
+                number = prompt("Digite um número para saber: ");
+
+                valor[i] = number;
+
+                if(valor[i]>0){
+                    positivo =+ 1;
+                }
+                else if(valor[i]<0){
+                    negativo += 1;
+                }
+                else if(valor[i]==(valor[i]%2==0)){
+                    par += 1;
+                }
+                else if(valor[i]==(valor[i]%2!=0)){
+                    impar += 1;
+                }
+            }
+
+            console.log(`${par} valor(es) par(es)`);
+            console.log(`${impar} valor(es) impar(es)`);
+            console.log(`${positivo} valor(es) positivo(es)`);
+            console.log(`${negativo} valor(es) negativo(es)`);
+        }
+
+        calcular();
+    
+    </script>
+
+</body>
+</html>
