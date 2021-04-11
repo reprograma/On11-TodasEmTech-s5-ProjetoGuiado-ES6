@@ -5,16 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
+    <title>Exercício 02</title>
+
 </head>
 
+
 <body>
-    <script>
+
+ <script>
+      
+ function calcularValor (){
+let codigoDoProduto = Number(prompt("Digite o código "));
+let quantidade = Number(prompt("Digite a quantidade do produto:"));
+let calculo;
+
+
+let item = [
+{
+	código: 1,
+	especificação : "cachorro-quente",
+	preço: 4.00
+},
+{
+	código: 2,
+	especificação: "x-salada",
+	preço:4.50
+},
+{
+	código: 3,
+	especificação: "x-bacon",
+	preço: 5.00
+},
+{
+	código: 4,
+	especificação: "torrada simples",
+	preço: 2.00
+},
+{
+	código: 5,
+	especificação: "refrigerante",
+	preço: 1.50
+}
+]
 
 
 
-
-    </script>
-</body>
+switch(codigoDigitado){
+	case 1: 
+		alert("Código do produto: " + item[0].código + ", produto: " + item[0].especificação + ", Preço: " + item[0].preço);
+		calculo = quant * 4;
+		alert("Total: R$" + calculo.toFixed(2));
+		break;
+	case 2:
+		alert("Código do produto: " + item[1].código + ", produto: " + item[1].especificação + ", Preço: " + item[1].preço);
+		calculo = quant * 4.50;
+		alert("Total: R$" + calculo.toFixed(2));
+		break;
+	case 3:
+		alert("Código do produto: " + item[2].código + ", produto: " + item[2].especificação + ", Preço: " + item[2].preço);
+		calculo = quant * 5;
+		alert("Total: R$" + calculo.toFixed(2));
+		break;
+	case 4:
+		alert("Código do produto: " + item[3].código + ", produto: " + item[3].especificação + ", Preço: " + item[3].preço);
+		calculo = quant * 2;
+		alert("Total: R$" + calculo.toFixed(2));
+		break;
+	case 5:
+		alert("Código do produto: " + item[4].código + ", produto: " + item[4].especificação + ", Preço: " + item[4].preço);
+		calculo = quant * 1.50;
+		alert("Total: R$" + calculo.toFixed(2));
+		break;
+	}
+}
+calcularValor();
+ </script>
 
 </html>
