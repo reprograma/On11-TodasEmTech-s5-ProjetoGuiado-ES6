@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+
+
+alert ("Pesquisa de Satisfação: No próximo campo digite o codigo do seu combustivel de preferência")
+alert ("1. Alcool, 2. Gasolina, 3. Diesel e 4. para sair")
+
+
+
+function  posto(){
+
+    var alcool = 0
+    var gasolina = 0
+    var diesel = 0
+
+    var entrada =(Number(prompt("Informe qual é o codigo do seu combustivel de preferencia")))
+    
+    for(var i = 0; i > 5 ; i++){
+ 
+    switch (entrada){
+
+        case 1:
+         alcool++;
+        break;
+
+        case 2:
+         gasolina++;
+         break;
+
+        case 3:
+         diesel++;
+        break;
+
+        case 4: 
+         alert("Obrigade por participar");
+         break;
+
+        default:
+         alert("Favor inserir valor de 1 a 4"); 
+         break;
+       
+}
+
+}
+
+
+    alert("MUITO OBRIGADO!\n" + "Álcool: " + alcool + "\nGasolina: " + gasolina + "\nDiesel: " + diesel);
+} 
+
+posto ()
+
+    </script>
+</body>
+
+</html>

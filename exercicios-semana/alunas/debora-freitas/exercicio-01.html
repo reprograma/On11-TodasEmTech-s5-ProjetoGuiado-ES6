@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+
+let cardapio=[
+    hotDog={ id:1,
+        tipo: "cachorro quente",
+        preço: 4.00
+    },
+    x1={id:2,
+        tipo:"x salada",
+        preço: 4.50
+    },
+    x2={id:3,
+        tipo:"x bacon",
+      preço: 5.00
+    },
+    torrada={id:4,
+        tipo:"torrada simples",
+        preço: 2.00
+    },
+    refri ={id:5,
+        tipo:"refrigerante",
+        preço: 1.50
+    }]
+
+    qto = Number(prompt("Quantos itens pretendes levar?"))
+    
+    function pedeAi(){
+    pedido = Number(prompt("Digite o código do produto desejado: "))
+    quantidade = Number(prompt("Pra quantas pessoas: "))
+    
+    
+    switch(pedido){
+        case 1:
+            p = hotDog.preço;
+            total = quantidade*p;
+
+            console.log(total);
+            console.log(p);
+
+            break;
+        case 2:
+            p = x1.preço;
+            total = quantidade*p;
+
+            break;
+        case 3:
+            p = x2.preço;
+            total = quantidade*p;
+
+            break;
+        case 4:
+            p = torrada.preço;
+            total = quantidade*p;
+
+            break;
+        case 5:
+            p = refri.preço;
+            total = quantidade*p;
+            break;
+        default:
+            alert("Saco vazio não para em pé");
+
+            break;      
+    }
+
+alert("Abre a carteira, tá ai o total R$:" + total.toFixed(2))
+
+    }
+    pedeAi()
+
+
+
+    </script>
+</body>
+
+</html>
