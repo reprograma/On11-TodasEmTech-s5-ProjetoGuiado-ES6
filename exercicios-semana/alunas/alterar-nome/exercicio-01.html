@@ -1,20 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<meta charset="UTF-8">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
-</head>
-
-<body>
     <script>
 
+    
+      let codigo = Number(prompt("Digite o código do produto que deseja:"))
+      let quantidade = Number(prompt("Digite a quantidade desejada:"))
 
-
+     switch (codigo) {
+        case 1:
+        let preco = (quantidade*4).toFixed(2);
+        alert(`Total: ${preco} R$`);
+        break
+        case 2:
+        let preco2 = (quantidade*4.5).toFixed(2);
+        alert(`Total: ${preco2} R$`);
+        case 3:
+        let preco3 = (quantidade*5).toFixed(2);
+        alert(`Total: ${preco3} R$`);
+        case 4:
+        let preco4 = (quantidade*2).toFixed(2);
+        alert(`Total: ${preco4} R$`);
+        case 5:
+        let preco5 = (quantidade*5).toFixed(2);
+        alert(`Total: ${preco5} R$`);
+        default:
+        alert("Não temos esse produto. Que tal escolher outro de nossos produtos?");
+      }
 
     </script>
-</body>
 
 </html>

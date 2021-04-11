@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 05</title>
-</head>
-
-<body>
+<meta charset="UTF-8">
+<html>
+ 
     <script>
-
-
-
-
+        // Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber o final do mês, com duas casas decimais. 
+        //O arquivo de entrada contém um texto (primeiro nome do vendedor) e 2 valores de dupla precisão (double) com duas casas decimais, representando o salário fixo do vendedor e montante total das vendas efetuadas por este vendedor, respectivamente.  
+     let nome = prompt("Digite seu nome:");
+     let salario = Number(prompt("Digite seu salário"));
+     let vendas = Number(prompt("Digite o valor de suas vendas efetuadas"));
+     let comissao= (vendas*0.15 + salario).toFixed(2);
+     alert(`Olá ${nome}!\nSeu salário é ${comissao} reais!`);
+     
     </script>
-</body>
 
 </html>

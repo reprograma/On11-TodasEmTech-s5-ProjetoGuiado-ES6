@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 07</title>
-</head>
-
-<body>
+<meta charset="UTF-8">
+<html>
+ 
     <script>
+        // Interaja com o array de linguagens e pare ao chegar em Node
+        // const linguagens = ['JavaScript', 'Go', 'Java', 'Angular', 'Node', 'React', 'Ruby']
+        // Depois coloque a última linguagem do array em uma variável sem removê-la do array.
 
-
+            const linguagens=['JavaScript', 'Go', 'Java', 'Angular', 'Node', 'React', 'Ruby'];
+            const posicao = linguagens.indexOf('Node') + 1 //a posicao de node é 4 +1 fica 5
+            linguagens.length = posicao //com o 5 temos um array de 0 a 4
+            console.log(linguagens)
+            // depois de ter um array com elementos até "Node", vamos pegar esse último valor desse novo array node
+            var ultimo = linguagens[linguagens.length -1]; //o array começa de zero, por isso subtrai 1
+            console.log(ultimo) //ultimo elemento do novo array
 
 
     </script>
-</body>
 
 </html>
