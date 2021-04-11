@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+        let entrada = 0;
+        let alcool = 0;
+        let gasolina = 0;
+        let diesel = 0;
+
+        function combustivel() {
+
+            do {
+                entrada = Number(prompt( 'Digite o código do combustivel : \n 1.Álcool \n 2.Gasolina \n 3.Diesel \n 4.Fim'
+                ));
+                if (entrada != 4) {
+                    if (entrada == 1) {
+                        alcool++;
+                    } else if (entrada == 2) {
+                        gasolina++;
+                    } else if (entrada == 3) {
+                        diesel++;
+                    } else {
+                        alert('Código inexistente')
+                        return combustivel();
+                    }
+                }
+
+            } while (entrada != 4) {
+                alert(` Seus pedidos:  \n Alcool: ${alcool} \n Gasolina: ${gasolina} \n Diesel: ${diesel}`)
+            }
+        }
+        combustivel()
+
+
+
+    </script>
+</body>
+
+</html>
