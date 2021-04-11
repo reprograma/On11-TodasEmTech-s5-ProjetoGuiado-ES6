@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+
+//document.write('Qual o código da comida?')
+var codigoComida = parseInt(prompt("Digite o código da comida escolhida:"));
+
+
+var CachorroQuente = {
+        valor : 4
+}; 
+
+var XSalada = {
+    valor : 4.5
+}; 
+
+var XBacon = {
+    valor : 5.00
+};
+
+var TorradaSimples = {
+    valor : 2.00
+};
+
+var Refrigerante = {
+    valor : 1.50
+};
+if (codigoComida <= 5) {
+var quantidadeComida = parseInt(prompt("Quantos você deseja?"));
+        
+switch (codigoComida) {
+
+    case 1:
+        document.write("Valor total da sua compra = R$" , Number(CachorroQuente.valor * quantidadeComida).toFixed(2));
+        alert('Você escolheu Cachorro-quente ;)')
+        break;
+    case 2:
+        document.write("Valor total da sua compra = R$" , Number(XSalada.valor * quantidadeComida).toFixed(2));
+        alert('Você escolheu X-Salada ;)')
+        break;
+    case 3: 
+        document.write("Valor total da sua compra = R$" , Number(XBacon.valor * quantidadeComida).toFixed(2));
+        alert('Você escolheu X-Bacon ;)')
+        break;
+    case 4:
+        document.write("Valor total da sua compra = R$" , Number(TorradaSimples.valor * quantidadeComida).toFixed(2));
+        alert('Você escolheu Torrada Simples ;)')
+        break;
+    case 5:
+        document.write("Valor total da sua compra = R$" , Number(Refrigerante * quantidadeComida).toFixed(2));
+        alert('Você escolheu Refrigerante ;)')
+        break;
+
+    }
+    } else {
+    alert("Ops! Não encontramos esse código. Digite um número de 1 a 5!")
+}
+
+    </script>
+</body>
+
+</html>
