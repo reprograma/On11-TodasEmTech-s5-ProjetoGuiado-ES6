@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+var alcool = 0
+var gasolina = 0 
+var diesel = 0 
+var fim = 0
+
+let produto = Number(prompt("Digite o código do produto de sua prefencia"))
+
+switch(produto){
+   case 1:
+   alcool++
+   break;
+
+   case 2:
+   gasolina++
+   break;
+
+   case 3:
+   diesel++
+   break;
+
+   case 4:
+   alert("Muito obrigado!")
+
+   default:
+      alert("[ERRO] Número inválido!")
+
+}
+alert(`Alcool: ${alcool} Gasolina: ${gasolina} Diesel: ${diesel}`)
+
+    </script>
+</body>
+
+</html>

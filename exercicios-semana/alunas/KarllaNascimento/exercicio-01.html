@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+      let codigo = Number(prompt("Escolha o código do seu pedido de 1 a 5::"))
+      let quantidade = Number(prompt("Informe quantos produtos você deseja:"))
+
+      switch (codigo) {
+   case 1: 
+   pedido = 4
+   total = pedido * quantidade
+   console.log("O valor total será R$", total.toFixed(2))
+   break
+
+   case 2: 
+   pedido = 4.5
+   total = pedido * quantidade  
+   console.log("O valor total será R$", total.toFixed(2))
+   break
+
+   case 3:
+   pedido = 5
+   total = pedido * quantidade  
+   console.log("O valor total será R$", total.toFixed(2))
+   break
+
+   case 4:
+   pedido = 2
+   total = pedido * quantidade  
+   console.log("O valor total será R$", total.toFixed(2))
+   break
+
+   case 5:
+   pedido = 1.50
+   total = pedido * quantidade  
+   console.log("O valor total será R$", total.toFixed(2))
+   break
+
+   default:
+   console.log("[ERRO] Você escolheu um produto não disponível.")
+}
+
+
+      
+      
+
+
+    </script>
+</body>
+
+</html>
