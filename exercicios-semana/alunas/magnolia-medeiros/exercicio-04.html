@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,26 @@
 <body>
     <script>
 
+    function senhaFixa() {
+        
+        let senha = Number(prompt('Por favo, digite a sua senha'))
 
+        if (senha != 2002) {
+            var msg = 'Senha inválida!' 
+            alert(msg)
+            return senhaFixa()
+        } else {
+            var msg = 'Acesso permitido!'
+            console.log(msg)
+            alert(msg)
+        }
+        imprimir(msg)
+    }
+    function imprimir(msg) {
+        document.write(`${msg}`)
 
+    }
+    senhaFixa()
 
     </script>
 </body>
