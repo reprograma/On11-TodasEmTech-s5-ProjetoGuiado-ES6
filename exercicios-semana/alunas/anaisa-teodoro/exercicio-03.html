@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+
+let valor = 0;
+let alcool = 0;
+let gasolina = 0;
+let diesel = 0;
+
+       
+        
+        while(true){
+            let codigo = prompt("Escolha o seu combustível preferido: ")
+            if(codigo < 1 || codigo > 4){
+                alert("Erro! Digite um código válido!");
+            }
+            if(codigo == 1){
+                alcool++; 
+            } else if(codigo  == 2){
+                gasolina++;
+            }else if(codigo  == 3){
+                diesel ++;
+            }else if(codigo  == 4){
+                break;
+            }
+        }
+        
+console.log(`
+    MUITO OBRIGADO
+    Alcool: ${alcool}
+    Gasolina: ${gasolina}
+    Diesel: ${diesel}`);
+
+
+    </script>
+</body>
+
+</html>

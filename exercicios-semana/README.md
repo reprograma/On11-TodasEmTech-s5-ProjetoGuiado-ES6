@@ -49,15 +49,44 @@ O [URI Online Judge](https://www.urionlinejudge.com.br/judge/pt/login) é uma pl
 - Exercício 06 - * Crie um array com todos os anos que Rihanna lançou álbum
    2005 2006 2007 2009 2010 2011 2012 2016
 
+    const albunsCantoraRihanna = [ 2005, 2006, 2007, 2009, 2010, 2011, 2012, 2016]
+    
+
+    for (let index = 0; index < albunsCantoraRihanna.length; index++) {
+    console.log(`${index+1}. ${albunsCantoraRihanna[index]}`)      
+
+
 * Interaja com o array utilizando um loop, para mostrar no console a seguinte mensagem: "Rihanna lançou álbum no ano de XXXX"
+
+const albunsCantoraRihanna = [ "2005", "2006", "2007", "2009", "2010", "2011", "2012", "2016"]
+for (albuns of albunsCantoraRihanna) {
+console.log(`Rihanna lançou álbum no ano de ${albuns}`);
+
+}
 
 - Exercício 07 - Interaja com o array de linguagens e pare ao chegar em Node
 
-```
 const linguagens = ['JavaScript', 'Go', 'Java', 'Angular', 'Node', 'React', 'Ruby']
-```
-
+    
+    for (let index = 0; index < linguagens.length; index++) {
+    
+    console.log(`${index + 1}. ${linguagens[index]}`)
+    if (linguagens[index] == 'Node')break 
+    }    
+    
 Depois coloque a última linguagem do array em uma variável sem removê-la do array.
+console.log(linguagens.lastIndexOf('Ruby'));
+// index 06
+ou
+var indices = [];
+var array = ['JavaScript', 'Go', 'Java', 'Angular', 'Node', 'React', 'Ruby'];
+var element = 'Ruby';
+var idx = array.lastIndexOf(element);
+while (idx != -1) {
+  indices.push(idx);
+  idx = (idx > 0 ? array.lastIndexOf(element, idx - 1) : -1);
+  console.log(indices);
+}
 
 ## Links para consulta
 

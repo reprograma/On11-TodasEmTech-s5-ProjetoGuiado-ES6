@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+
+<body>
+    <script>
+
+let funcionario =["João",500.00,1230.30];
+
+
+function calcularSalario(valor){
+  let salarioBase = parseFloat(valor[1])
+  let valorSalario = parseFloat(valor[2])
+  let percentual = valorSalario * 0.15;
+  let salario = (salarioBase + percentual).toFixed(2);
+  document.write(`O total que o funcionário João deverá receber é R$ ${salario}`) //realizei conforme exemplo fornecido na plataforma URI nº 1009. 
+}
+calcularSalario(funcionario)
+
+
+
+    </script>
+</body>
+
+</html>
