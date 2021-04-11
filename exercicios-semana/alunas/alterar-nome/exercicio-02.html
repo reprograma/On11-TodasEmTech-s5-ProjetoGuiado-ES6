@@ -1,20 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<meta charset="UTF-8">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 02</title>
-</head>
-
-<body>
     <script>
+     //Leia 5 valores Inteiros. A seguir mostre quantos valores digitados foram pares, quantos valores digitados foram ímpares, quantos valores digitados foram positivos e quantos valores digitados foram negativos.
+     //O arquivo de entrada contém 5 valores inteiros quaisquer.
 
+        let n1 = Number(prompt("Digite o primeiro número"));
+        let n2 = Number(prompt("Digite o segundo número"));
+        let n3 = Number(prompt("Digite o terceiro número"));
+        let n4 = Number(prompt("Digite o quarto número"));
+        let n5 = Number(prompt("Digite o quinto número"));
+        let numeros = [n1,n2,n3,n4,n5];
+       
+        let positivos = numeros.filter(pos => pos >= 0); // => faz parte da sintaxe padrão do filter, é como se fosse
+        let negativos = numeros.filter(neg => neg < 0); // uma function
+        let pares = numeros.filter(par => (par%2) == 0);
+        let impar = numeros.filter(imp => (imp%2) !=0);
 
-
-
+        alert(`${positivos.length} positivos\n${negativos.length} negativos\n${pares.length} pares\n${impar.length} ímpares`)
+        
     </script>
-</body>
 
 </html>
