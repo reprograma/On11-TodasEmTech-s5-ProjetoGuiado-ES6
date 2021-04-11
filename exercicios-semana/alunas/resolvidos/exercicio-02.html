@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+
+
+        let positivos = 0
+        let negativos = 0
+        let impares = 0
+        let pares = 0
+
+        for (let i = 0; i < 5; i++) {
+            const num = Number(prompt("Digite um número inteiro qualquer"));
+
+            if (num % 2 === 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+            if (num > 0) {
+                positivos++;
+            } else if (num < 0) {
+                negativos++;
+            }
+        }
+
+        //UMA OUTRA SOLUÇÃO SERIA INICIAR A VARIÁVEL i E FAZER UM WHILE (essa solução entraria no lugar das linhas 20 a 33)
+        // let i = 0
+        // while (i < 5) {
+        //     const num = Number(prompt("Digite um número inteiro qualquer"));
+
+        //     if (num % 2 === 0) {
+        //         pares++;
+        //     } else {
+        //         impares++;
+        //     }
+        //     if (num > 0) {
+        //         positivos++;
+        //     } else if (num < 0) {
+        //         negativos++;
+        //     }
+        //     i++
+        // }
+        //FIM DA SEGUNDA SOLUÇÃO
+
+
+        //No enunciado, ele pede para deixarmos cada frase em uma linha distinta, o \n garante a quebra de linha, e assim não precisamos digitar um console.log por linha
+        console.log(`
+          ${pares} valor(es) par(es) \n
+          ${impares} valor(es) ímpar(es)\n
+          ${positivos} valor(es) positivo(s)\n
+          ${negativos} valor(es) negativo(s)
+          `);
+
+    </script>
+</body>
+
+</html>

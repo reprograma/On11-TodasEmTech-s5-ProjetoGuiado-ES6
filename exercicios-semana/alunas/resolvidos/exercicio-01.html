@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+
+
+        const codigo = prompt('insira o código do produto');
+        let preco;
+
+        switch (codigo) {
+            case "1":
+                preco = 4;
+                break;
+
+            case "2":
+                preco = 4.50;
+                break;
+
+            case "3":
+                preco = 5;
+                break;
+
+            case "4":
+                preco = 2;
+                break;
+
+            case "5":
+                preco = 1.50;
+                break;
+
+            default:
+                alert(`código inválido`);
+
+        }
+
+        // Aqui verificamos se existe um preço atribuído para o código digitado
+        if (preco) {
+            let quantidade = parseInt(prompt('insira a quantidade do produto'));
+            alert(`Total: R$ ${(quantidade * preco).toFixed(2)}`)
+        }
+
+    </script>
+</body>
+
+</html>
