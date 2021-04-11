@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+
+const cachorroQuente = 4;
+const xSalada = 4.50;
+const xBacon = 5;
+const torradaSimples = 2;
+const refrigerante = 1.50;
+
+function totalDoPedido() {
+
+
+let codigo = parseInt(prompt("Digite Código do Produto"));
+
+if(codigo < 1 || codigo > 5 || isNaN(codigo)){
+    alert("codigo inválido")
+    return totalDoPedido()
+}
+
+
+let quantidade = Number(prompt("Digite a Quantidade"));
+
+
+if(codigo==1){
+    alert(cachorroQuente*quantidade)
+}
+else if(codigo==2){
+    alert(xSalada*quantidade)
+}
+else if(codigo==3){
+    alert(xBacon*quantidade)
+}
+else if(codigo==4){
+    alert(torradaSimples*quantidade)
+}
+else if(codigo==5){
+    alert(refrigerante*quantidade)
+}
+else{
+    alert("produto não encontrado")
+}
+
+
+}// fim da função
+totalDoPedido()
+
+
+
+    </script>
+</body>
+
+</html>
