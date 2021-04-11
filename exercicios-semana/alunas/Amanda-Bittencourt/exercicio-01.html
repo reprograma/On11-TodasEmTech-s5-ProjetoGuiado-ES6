@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+        function Lanchao(){
+
+            let order = Number(prompt("Por Favor, adicione seus pedidos: \n 1- Cachorro Quente R$4,00 \n 2- X-Salada R$4,50 \n 3- X-Bacon R$5,00 \n 4- Torrada Simples R$2,00 \n 5- Refrigerante R$1,50"));
+            if(order == 1){
+                prd = "Cachorro Quente";
+                qty = prompt("Você selecionou " + prd + ". Digite a quantidade" , "");
+                total = qty *4.00;
+                alert("O total é: R$ " + total.toFixed(2));
+            }
+
+            else if(order== 2){
+                prd = "X-Salada";
+                qty = prompt("Você selecionou " + prd + ". Digite a quantidade" , "");
+                total = qty *4.50;
+                alert("O total é: R$ " + total.toFixed(2));
+            }
+
+            else if(order== 3){
+                prd = "X-Bacon";
+                qty = prompt("Você selecionou " + prd + ". Digite a quantidade" , "");
+                total = qty *5.00;
+                alert("O total é: R$ " + total.toFixed(2));
+            }
+
+            else if(order== 4){
+                prd = "Torrada Simples";
+                qty = prompt("Você selecionou " + prd + ". Digite a quantidade" , "");
+                total = qty *2.00;
+                alert("O total é: R$ " + total.toFixed(2));
+            }
+
+            else if(order== 5){
+                prd = "Refrigerante";
+                qty = prompt("Você selecionou " + prd + ". Digite a quantidade" , "");
+                total = qty *1.50;
+                alert("O total é: R$ " + total.toFixed(2));
+            }
+        }
+            Lanchao();
+        
+        
+        
+
+
+    </script>
+</body>
+
+</html>
+        
