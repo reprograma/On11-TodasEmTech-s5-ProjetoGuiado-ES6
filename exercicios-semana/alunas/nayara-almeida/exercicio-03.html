@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+
+let alcool = 0;
+let gasolina = 0;
+let diesel = 0;
+
+function combustivelFavorito(){
+
+    while (combustivel != 4){
+        var combustivel = Number(prompt("Digite \n 1- ALCOOL  \n 2- GASOLINA  \n 3- DIESEL \n 4- FIM"));
+        if(combustivel == "" || combustivel >= 5){
+            alert("Código Inválido");
+            return combustivelFavorito();
+        }
+
+        if(combustivel == 1){
+            alcool++;
+        }else if(combustivel == 2){
+            gasolina++;
+        }else if(combustivel == 3){
+            diesel++
+        }
+    }
+          document.write(`MUITO OBRIGADO <br>`);
+          document.write(`Alcool: ${alcool} <br>`);
+          document.write(`Gasolina: ${gasolina} <br>`);
+          document.write(` Diesel: ${diesel} <br>`);
+}
+combustivelFavorito();
+
+
+    </script>
+</body>
+
+</html>
