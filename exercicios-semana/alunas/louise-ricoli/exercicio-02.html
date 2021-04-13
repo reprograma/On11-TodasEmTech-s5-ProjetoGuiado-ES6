@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+        let z = 0;
+        let x = 0;
+        let c = 0;
+        let v = 0;
+
+        function numeros(lou){
+            let numero = prompt(`Digite o ${lou}º numero: `);
+            while(numero == "" || isNaN(Number(numero))){
+                numero = prompt(`Digite o ${lou}º numero: `);
+            }
+
+            if(Number(numero) < 0){
+                ++v
+            } else {
+                ++c
+            }
+
+            if(Number(numero) % 2 == 0){
+                ++z
+            } else {
+                ++x
+            }
+            
+        }
+        
+        for(var lou = 1; lou <= 5; lou++){
+            numeros(lou)
+        }
+       
+        let resultado = alert(` ${z} Valor(es) Par(es) \n ${x} Valor(es) Impar(es) \n ${c} Valor(es) Positivo(s) \n ${v} Valor(es) Negativo(s) `)
+
+
+
+
+    </script>
+</body>
+
+</html>

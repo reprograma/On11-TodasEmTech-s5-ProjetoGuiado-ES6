@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+        let alcool = 0
+        let gasolina = 0
+        let diesel = 0
+
+        function postoGas(){
+            for(var i = 1; i <= 4; i++){
+
+                let abastecer = prompt(`Digite um codigo: \n 1.Álcool 2.Gasolina 3.Diesel 4.Fim`);
+
+                while (abastecer == "" || isNaN(Number(abastecer))){
+                    alert("Codigo Invalido")
+                    abastecer = prompt(`Digite um codigo: \n 1.Álcool 2.Gasolina 3.Diesel 4.Fim`)
+                }
+
+                if (Number(abastecer) == 4){
+                    break
+                }else if (Number(abastecer) == 1 ){
+                    ++alcool
+                }else if (Number(abastecer) == 2){
+                    ++gasolina
+                }else if (Number(abastecer) == 3){
+                    ++diesel 
+                }
+            }
+        }
+        
+        postoGas()
+
+
+        resultado = alert(`MUITO OBRIGADO \n Alcool: ${alcool} \n Gasolina: ${gasolina} \n Diesel: ${diesel}`)
+
+
+
+
+    </script>
+</body>
+
+</html>
