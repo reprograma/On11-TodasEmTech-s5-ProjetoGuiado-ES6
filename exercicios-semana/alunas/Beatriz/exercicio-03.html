@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+
+const combustiveis = [() => alcool++, () => gasolina++, () => diesel++, false];
+let alcool = 0;
+let gasolina =0;
+let diesel = 0;
+
+
+function entradaHTML() {
+    let numIn = prompt(`Insira um numero de id referente ao seu combustivel de preferencia \n id[1] Alcool\n id[2] Gasolina \n id[3] Diesel \n id [4] para terminar a simulação`);
+    numIn = Number(numIn);
+    numIn--;
+
+    if (isNaN(numIn) || numIn  > combustiveis.length || Math.sign(numIn)==-1) return entradaHTML();
+
+
+    if (combustiveis[numIn]) combustiveis[numIn](); 
+    else {
+            if (alcool==0 && gasolina==0 && diesel==0) {
+                let alerta = prompt('nenhum dado insirido, deseja inserir? y para sim, ok para não');
+
+                alerta = (!alerta || alerta==null || alerta==undefined)? "" : alerta.toLocaleLowerCase();
+
+                if (alerta=="y") return entradaHTML();
+
+                alert('Nenhum resultado foi gerado devido a ausencia de entrada, obrigada!');
+
+                return;
+            }
+            alert(`Muito Obrigada! \n Alcool : ${alcool} \n Gasolina: ${gasolina} \n Diesel: ${diesel}`);
+            return;
+        }
+        
+    return entradaHTML();
+}
+
+entradaHTML();
+
+    </script>
+</body>
+
+</html>

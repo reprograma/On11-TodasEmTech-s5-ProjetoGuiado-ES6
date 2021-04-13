@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+
+<body>
+    <script>
+const senhaValida = 2002;
+function entradaHTML() {
+    let numIn = prompt(`Digite sua senha - senha válida ${senhaValida}`);
+    numIn = Number(numIn);
+
+    if (isNaN(numIn) || numIn != senhaValida) { 
+        alert('senha invalida!'); 
+        return entradaHTML(); 
+    }
+
+    alert('Acesso Permitido!');
+    return;
+}
+entradaHTML();
+    </script>
+</body>
+
+</html>

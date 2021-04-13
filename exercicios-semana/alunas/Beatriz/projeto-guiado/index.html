@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- baseado nesse codepen https://codepen.io/AswadAli/pen/ZdLZVO -->
+    <title>Cifra de César</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <main class="terminal">
+        <h1>Cifra de César</h1>
+        <div class="container">
+
+            <div class="left">
+                <div class="console">
+                    <label for="input">Entrada:</label>
+                    <div class="console-input">
+                        <label class="arrow" for="input">></label>
+                        <input type="text" id="input">
+                    </div>
+                </div>
+                <div class="console">
+                    <label for="shift-input">Chave de deslocamento:</label>
+                    <div class="console-input">
+                        <label class="arrow" for="shift-input">></label>
+                        <input type="text" id="shift-input" value>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="encrypt-btn" onclick="cifrar()">Cifrar</button>
+                    <button id="decrypt-btn" onclick="decifrar()">Decifrar</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <label for="output">Saída</label>
+                <div class="console-output">
+                    <label class="arrow" for="output">></label>
+                    <textarea id="output" value=""></textarea>
+                </div>
+                <button id="clean-btn" onclick="limpar()">Limpar</button>
+            </div>
+
+        </div>
+    </main>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
