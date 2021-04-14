@@ -9,29 +9,73 @@
 </head>
 
 <body>
+    <p>
+	Entrada
+</p>
+<table>
+	<tr>
+		<th>CÓDIGO</th>
+		<th>ESPECIFICAÇÃO</th>
+		<th>PREÇO</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>cachorro-quente</td>
+		<td>4.00</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>x-salada</td>
+		<td>4.50</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>x-bacon</td>
+		<td>5.00</td>
+	</tr>
+</table>
+<p>
+O arquivo de entrada contém dois valores inteiros correspondentes ao código e à quantidade de um item conforme tabela acima.
+</p>
+<p>
+Saída
+</p>
+<p>
+O arquivo de saída deve conter a mensagem "Total: R$ " seguido pelo valor a ser pago, com 2 casas após o ponto decimal.
+</p>
+<p>
+Exemplo de Entrada	==> 3, 2	
+</p>
+<p>
+Exemplo de Saída ==> Total: R$ 10.00
+</p>
     <script>
-//Errei em alguma parte. que vou corrigir durante a semana. Entreguei para não atrasar.
-const [id, qtd] = novoObjeto.map(item => Number(item));
+//Errei em alguma parte e corrigi durante a semana. Entreguei a primeira versão para não atrasar. Desculpa, professora Lorena!
+const items = [
+{
+	code: 1,
+	especification: 'cahorro-quente', 
+	price: 4.00
+},
+	{
+	code: 2,
+	especifcation: 'x-salada', 
+	price: 4.50
+},
+{
+	code: 3,
+	especifcation: 'x-bacon', 
+	price: 5.00
+}]
 
-let preco = 0;
+const filterItemByCode = (item, code) => item.code === code ? true : false
 
-switch(id){
-  case 1: 
-    preco = 4;
-  break;
-  case 2: 
-    preco = 4.5;
-  break;
-  case 3: 
-    preco = 5;
-  break;
-  case 4: 
-   preco = 2;
-  break;
-  case 5: 
-    preco = 1.5;
-  break;
-}
+const calculate = (item, quantity) => (item.price * quantity).toFixed(2)
+
+const total = (code, quantity) => items.filter(item => filterItemByCode(item, code)).map(item => calculate(item, quantity))
+
+console.log(`Total: R$ ${total(1, 2)}`) // "Total: R$ 8.00"
+console.log(`Total: R$ ${total(3, 2)}`) // "Total: R$ 10.00"
 
 const total = preco * qtd; 
 
