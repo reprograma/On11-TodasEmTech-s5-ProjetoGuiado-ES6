@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+        var par = 0;
+        var impar = 0;
+        var positivo = 0;
+        var negativo = 0;
+
+        for (var i = 0; i < 5; i++) {
+
+            let num = Number.parseInt(prompt("Digite um Número: "));
+
+            if (num > 0) {
+                positivo++;
+            } else if (num < 0) {
+                negativo++;
+            }
+            if (num % 2 == 0) {
+                par++;
+            } else {
+                impar++;
+            }
+        }
+        console.log(par, " valor(es) par(es)");
+        console.log(impar, " valor(es) ímpar(es)");
+        console.log(positivo, " valor(es) positivo(s)");
+        console.log(negativo, " valor(es) negativo(s)");
+    </script>
+</body>
+
+</html>

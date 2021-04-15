@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <style>
+        body {
+            background: rgb(228, 218, 193);
+            font: normal 15pt Arial;
+            text-align: center;
+            padding: 40px;
+        }
+
+        div {
+            text-align: center;
+            padding: 35px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Cálculo de vendas</h1>
+    <img id='imagem' src="tabela.png" alt="Menu"></br></br>
+
+    Código do produto: <input type="number" name="txtn1" id="txtn1">
+    Quantidade: <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Calcular" onclick="calcular()">
+    <div id="res">Total a pagar:</div>
+    <script>
+        var tn1 = document.getElementById('txtn1')
+        var tn2 = document.querySelector('input#txtn2')
+        var res = document.getElementById("res")
+
+        function calcular() {
+            var x = Number(tn1.value)
+            var y = Number(tn2.value)
+
+            if (x == 1) {
+                res.innerHTML = ("Total: R$" + (4.00 * y).toFixed(2));
+            } else if (x == 2) {
+                res.innerHTML = ("Total: R$" + (4.50 * y).toFixed(2));
+            } else if (x == 3) {
+                res.innerHTML = ("Total: R$" + (5.00 * y).toFixed(2));
+            } else if (x == 4) {
+                res.innerHTML = ("Total: R$" + (2.00 * y).toFixed(2));
+            } else if (x == 5) {
+                res.innerHTML = ("Total: R$" + (1.50 * y).toFixed(2));
+            } else {
+                alert('Código do produto inválido')
+            }
+        }
+    </script>
+</body>
+
+</html>
