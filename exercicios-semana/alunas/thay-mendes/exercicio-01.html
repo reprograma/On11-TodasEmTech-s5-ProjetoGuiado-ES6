@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <script>
+        let itemPedido = Number(prompt("Qual código do item consumido?"));
+        let qtdPedido = Number(prompt("Quantos você consumiu?"));
+
+        let total;
+
+        var menu = [
+            {
+                id: 1,
+                especificacao: "Cachorro-Quente",
+                preco: 4.00
+            },
+            {
+                id: 2,
+                especificacao: "X-salada",
+                preco: 4.50
+            },
+            {
+                id: 3,
+                especificacao: "X-bacon",
+                preco: 5.00
+            },
+            {
+                id: 4,
+                especificacao: "Torrada simples",
+                preco: 2.00
+            },
+            {
+                id: 5,
+                especificacao: "Refrigerante",
+                preco: 1.50
+            }
+        ]
+
+
+        const produto = menu.find(produto => produto.id == itemPedido)
+        total = produto.preco * qtdPedido
+        alert("Total: R$ " + total.toFixed(2))
+
+    </script>
+</body>
+
+</html>

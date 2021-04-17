@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+        //let itemArray = Number(prompt("insira 5 numeros inteiros: "))
+        var array = [];
+    
+
+      for (var i = 0; i <= 4; i++) {
+          array[i] = Number(prompt("Digite o "+ (i+1) + " numero:"))
+      }
+
+      let pares = 0;
+      let impares = 0;
+      let negativos = 0;
+      let positivos = 0;
+
+    for (var i = 0; i <= 4; i++) {
+      var valor = array[i]
+      if(valor % 2 == 0)
+         pares++
+      else
+         impares++
+      if(valor > 0) 
+         positivos++
+      if(valor < 0)
+         negativos++
+   }
+
+alert(
+  pares + " valor(es) par(es) \n" + 
+  impares + " valor(es) impar(es) \n" + 
+  positivos + " valor(es) positivo(s) \n" + 
+  negativos + " valor(es) negativo(s)"
+)
+
+
+
+
+
+    </script>
+</body>
+
+</html>
