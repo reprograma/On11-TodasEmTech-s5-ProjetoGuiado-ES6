@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+        let cliente1= Number(prompt("Insira o código do combustível."));
+
+        /*let cliente2= Number(prompt("Insira o código do combustível.")); 
+        let cliente3= Number(prompt("Insira o código do combustível.")); 
+        let cliente4= Number(prompt("Insira o código do combustível.")); 
+        let cliente5=Number(prompt("Insira o código do combustível."));*/
+
+        //let combustiveis=[cliente1,cliente2,cliente3,cliente4,cliente5]
+        let combustiveis=[cliente1]
+         console.log(combustiveis)
+
+         //1.Álcool 2.Gasolina 3.Diesel 4.Fim
+
+        let valorAlcool=1
+        let valorGasolina=2
+        let valorDiesel=3
+        let valorFim=4
+
+        function analisarCombustiveis(combustiveis){
+            let alcool=0
+            let gasolina=0
+            let diesel=0
+            let fim=0
+
+            document.write(`Muito Obrigade! ${"<br><br>"}`)
+
+                for (i=0;i<combustiveis.length;i++){
+                    combustivelNull=true
+                    if (combustiveis[i]==valorAlcool){
+                        alcool++
+                    }
+                    if(combustiveis[i]==valorGasolina){
+                        gasolina++
+                    }
+
+                    if(combustiveis[i]==valorDiesel){
+                        diesel++
+                    }
+
+                    if(combustiveis[i]==valorFim){
+                        break
+                    }
+                
+                }
+                
+                
+            document.write(`Álcool: ${alcool}.${'<br>'}`)
+            document.write(`Gasolina: ${gasolina}.${'<br>'}`)
+            document.write(`Diesel: ${diesel}.${'<br>'}`)
+            
+            }
+
+            analisarCombustiveis(combustiveis);
+            
+
+    </script>
+</body>
+
+</html>
